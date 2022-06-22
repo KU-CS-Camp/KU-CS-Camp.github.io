@@ -4,7 +4,7 @@ This website will be used for downloading starter code for our projects. I will 
 
 ### Monday Session 1
 
-Outline
+#### Outline
 - Introduction
 - Python Review
 - Python Exercises
