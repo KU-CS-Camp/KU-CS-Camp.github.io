@@ -2,7 +2,14 @@
 
 This website will be used for downloading starter code for our projects. I will also attach the slides we go over that can be used as reference while you work on projects.
 
-### Markdown
+### Project 1
+
+[Tic Tac Toe](starter-code/tictactoe.py)
+
+### Project 1
+
+[Tic Tac Toe](starter-code/tictactoe.py)
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
