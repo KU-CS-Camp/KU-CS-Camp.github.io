@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome to Summer Camp!
 
-You can use the [editor on GitHub](https://github.com/KU-CS-Camp/KU-CS-Camp.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This website will be used for downloading starter code for our projects. I will also attach the slides we go over that can be used as reference while you work on projects.
 
 ### Markdown
 
