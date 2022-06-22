@@ -12,25 +12,43 @@ This website will be used for downloading starter code for our projects. I will 
 
 ### Monday Session 2
 
+#### Outline
+- Introduction
+
 [Tic Tac Toe](starter-code/tictactoe.py)
 
 ### Tuesday Session 1
+
+#### Outline
+- Introduction
 
 [Tic Tac Toe](starter-code/tictactoe.py)
 
 ### Tuesday Session 2
 
+#### Outline
+- Introduction
+
 [Tic Tac Toe](starter-code/tictactoe.py)
 
 ### Thursday Session 1
+
+#### Outline
+- Introduction
 
 [Tic Tac Toe](starter-code/tictactoe.py)
 
 ### Thursday Session 2
 
+#### Outline
+- Introduction
+
 [Tic Tac Toe](starter-code/tictactoe.py)
 
 ### Friday Session
+
+#### Outline
+- Introduction
 
 [Tic Tac Toe](starter-code/tictactoe.py)
 
