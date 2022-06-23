@@ -10,6 +10,8 @@ This website will be used for downloading starter code for our projects. I will 
 - Python Exercises
 - Machine Learning Overview
 
+[Python Review Exercises](starter-code/PythonReviewExercises.pdf)
+
 ### Monday Session 2
 
 #### Outline
