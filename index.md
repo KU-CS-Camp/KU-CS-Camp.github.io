@@ -10,6 +10,11 @@ This website will be used for downloading starter code for our projects. I will 
 - Python Exercises
 - Machine Learning Overview
 
+#### Slides
+
+
+#### Projects
+
 [Python Review Exercises](starter-code/PythonReviewExercises.pdf)
 
 ### Monday Session 2
@@ -17,6 +22,10 @@ This website will be used for downloading starter code for our projects. I will 
 #### Outline
 - Introduction
 
+#### Slides
+
+
+#### Projects
 [Tic Tac Toe](starter-code/tictactoe.py)
 
 ### Tuesday Session 1
@@ -24,6 +33,10 @@ This website will be used for downloading starter code for our projects. I will 
 #### Outline
 - Introduction
 
+#### Slides
+
+
+#### Projects
 [Tic Tac Toe](starter-code/tictactoe.py)
 
 ### Tuesday Session 2
@@ -31,6 +44,10 @@ This website will be used for downloading starter code for our projects. I will 
 #### Outline
 - Introduction
 
+#### Slides
+
+
+#### Projects
 [Tic Tac Toe](starter-code/tictactoe.py)
 
 ### Thursday Session 1
@@ -38,6 +55,10 @@ This website will be used for downloading starter code for our projects. I will 
 #### Outline
 - Introduction
 
+#### Slides
+
+
+#### Projects
 [Tic Tac Toe](starter-code/tictactoe.py)
 
 ### Thursday Session 2
@@ -45,6 +66,10 @@ This website will be used for downloading starter code for our projects. I will 
 #### Outline
 - Introduction
 
+#### Slides
+
+
+#### Projects
 [Tic Tac Toe](starter-code/tictactoe.py)
 
 ### Friday Session
