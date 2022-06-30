@@ -10,6 +10,8 @@ filename: python-review-exercises.md
 - [Terminal Commands](https://www.guru99.com/linux-commands-cheat-sheet.html)
 - [Python Reference](https://www.w3schools.com/python/)
 - [NumPy Reference](https://www.w3schools.com/python/numpy/numpy_intro.asp)
+
+
 ***
 ### Exercise 1 - Hello World
 
