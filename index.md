@@ -15,6 +15,8 @@ This website will be used for downloading starter code for our projects. I will 
 
 #### Projects
 
+[Python Review Exercises](/python-review-exercises.md)
+
 [Python Review Exercises](starter-code/PythonReviewExercises.pdf)
 
 ### Monday Session 2
