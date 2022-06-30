@@ -1,8 +1,8 @@
-<!-- ---
+---
 title: Python Review Exercises
-layout: template
+layout: default
 filename: python-review-exercises.md
----  -->
+--- 
 
 ## Python Review Exercises
 
