@@ -17,18 +17,22 @@ This website will be used for downloading starter code for our projects. I will 
 
 [Python Review Exercises](/python-review-exercises.md)
 
-[Python Review Exercises](starter-code/PythonReviewExercises.pdf)
-
 ### Monday Session 2
 
 #### Outline
-- Introduction
+- Evaluation and Metrics
+- Classifiers
+    - Naïve Bayesian
+    - Regression
+    - LDA and QDA
+    - kNN
+    - SVM
 
 #### Slides
 
 
 #### Projects
-[Tic Tac Toe](starter-code/tictactoe.py)
+[Iris Model Comparison](/iris.md)
 
 ### Tuesday Session 1
 
