@@ -35,6 +35,8 @@ This website will be used for downloading starter code for our projects. I will 
 #### Projects
 [Iris Model Comparison](/iris.md)
 
+[Movie Box Office Predictor](/box-office.md)
+
 ### Tuesday Session 1
 
 #### Outline
@@ -46,6 +48,7 @@ This website will be used for downloading starter code for our projects. I will 
 
 #### Projects
 
+[Digit Identifier](/digit-identifier.md)
 
 ### Tuesday Session 2
 
@@ -58,6 +61,7 @@ This website will be used for downloading starter code for our projects. I will 
 
 #### Projects
 
+[Stock Predictor](/stock-predictor.md)
 
 ### Thursday Session 1
 
@@ -69,7 +73,7 @@ This website will be used for downloading starter code for our projects. I will 
 
 
 #### Projects
-
+[Customer Analysis](/customer-analysis.md)
 
 ### Thursday Session 2
 
@@ -82,6 +86,7 @@ This website will be used for downloading starter code for our projects. I will 
 
 #### Projects
 
+[Tic Tac Toe](/tic-tac-toe.md)
 
 ### Friday Session
 
