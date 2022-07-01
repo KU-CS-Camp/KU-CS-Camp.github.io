@@ -1,4 +1,3 @@
-<button class="buttons github">Hello</button>
 ## Welcome to Summer Camp!
 
 This website will be used for downloading starter code for our projects. I will also attach the slides we go over that can be used as reference while you work on projects.
