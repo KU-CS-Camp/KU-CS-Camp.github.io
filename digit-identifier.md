@@ -38,9 +38,9 @@ Check the shape of the new arrays.
   }
 }</script>
 <button onclick="changeVisibility('p1')">Check Code</button>
-<p id="p1" visibility="hidden">
+<div id="p1" visibility="hidden">
 print(X_train.shape)
 print(y_train.shape)
 print(X_test.shape)
 print(y_test.shape)
-</p>
+</div>
