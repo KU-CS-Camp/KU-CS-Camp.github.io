@@ -2,6 +2,8 @@
 
 This website will be used for downloading starter code for our projects. I will also attach the slides we go over that can be used as reference while you work on projects.
 
+<button>hello</button>
+
 ### Monday Session 1
 
 #### Outline
