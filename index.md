@@ -9,6 +9,7 @@ This website will be used for downloading starter code for our projects. I will 
 - Python Review
 - Python Exercises
 - Machine Learning Overview
+- Supervised Machine Learning
 
 #### Slides
 
@@ -37,53 +38,58 @@ This website will be used for downloading starter code for our projects. I will 
 ### Tuesday Session 1
 
 #### Outline
-- Introduction
+- Decision Tree Classifier
+- Neural Networks
 
 #### Slides
 
 
 #### Projects
-[Tic Tac Toe](starter-code/tictactoe.py)
+
 
 ### Tuesday Session 2
 
 #### Outline
-- Introduction
+- Reoccurent Neural Networks
+- Longer Time for Projects
 
 #### Slides
 
 
 #### Projects
-[Tic Tac Toe](starter-code/tictactoe.py)
+
 
 ### Thursday Session 1
 
 #### Outline
-- Introduction
+- Unsupervised Machine Learning
+- k-Means Clustering
 
 #### Slides
 
 
 #### Projects
-[Tic Tac Toe](starter-code/tictactoe.py)
+
 
 ### Thursday Session 2
 
 #### Outline
-- Introduction
+- Reinforcement Learning
+- Q-Learning
 
 #### Slides
 
 
 #### Projects
-[Tic Tac Toe](starter-code/tictactoe.py)
+
 
 ### Friday Session
 
 #### Outline
-- Introduction
+- Create Presentation
+- Presentation Runthrough
+- Complete Unfinished Projects
 
-[Tic Tac Toe](starter-code/tictactoe.py)
 
 <!-- Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
