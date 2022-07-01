@@ -90,6 +90,13 @@ This website will be used for downloading starter code for our projects. I will 
 - Presentation Runthrough
 - Complete Unfinished Projects
 
+### Finish Projects Early?
+
+Here are some websites with ideas for other machine learning projects:
+
+https://data-flair.training/blogs/machine-learning-project-ideas/
+
+https://www.dunebook.com/machine-learning-projects-for-beginners-and-professionals/
 
 <!-- Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
