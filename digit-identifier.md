@@ -24,3 +24,18 @@ Load the data from the MNIST dataset.
 ```
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
 ```
+
+***
+### Check Array Shape
+
+Check the shape of the new arrays.
+
+<button onclick="()=>{if(document.findViewById('p1').style.visibility = 'hidden'){ document.findViewById('p1').style.visibility = 'visible'} else {document.findViewById('p1').style.visibility = 'hidden'}}">Check Code</button>
+<p id="p1" visibility="hidden">
+```
+print(X_train.shape)
+print(y_train.shape)
+print(X_test.shape)
+print(y_test.shape)
+```
+</p>
