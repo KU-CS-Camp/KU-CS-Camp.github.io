@@ -1,4 +1,10 @@
-<script>document.getElementsByClassName("buttons github").style.visibility = "hidden";</script>
+<script>var ele = document.getElementsByTagName("button");
+        if (ele.length > 0) {
+            for (i = 0; i < ele.length; i++) {
+                if (ele[i].type == "button")
+                    ele[i].style.display = "none";
+            }
+        }</script>
 ## Welcome to Summer Camp!
 
 This website will be used for downloading starter code for our projects. I will also attach the slides we go over that can be used as reference while you work on projects.
