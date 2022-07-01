@@ -27,6 +27,8 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 ```
+
+
 ***
 ### Load Dataset
 
@@ -63,4 +65,22 @@ Let’s take a look at the data using some useful commands that could also be he
 - Class distribution - We can group the data by the class attribute and count how many instances belong to each class
      ```dataset.groupby('class').size()```
 
+***
+### Visualize Data
 
+Now, we can visualize our data for an even further understanding with matplotlib.
+
+We can look at the distribution of the input variables using box and whisker plots
+```
+dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+pyplot.show()
+```
+
+Another way to view distribution by creating histograms
+
+```
+dataset.hist()
+pyplot.show()
+```
+
+Do you notice any familiar distributions?
