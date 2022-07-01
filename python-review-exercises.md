@@ -18,16 +18,17 @@ filename: python-review-exercises.md
 Every programmer's first program is Hello World. In this exercise, we will go through the process of creating a file, writing a basic Python print command, and use a terminal to execute the program.
 
 1. Create a new folder named ‘python-review’
-2. Open the Atom application
-3. Open your new ‘Python Review’ folder in Atom
-4. Create a new file named ‘helloworld.py’
+2. Open the Atom application by clicking 'Menu' in the bottom left corner and searching for it
+3. Open your new ‘Python Review’ folder in Atom (File > Open)
+4. Create a new file named ‘helloworld.py’ (File > Create New File)
 5. Type the following code in the file:
 ```
 print('Hello, World!')
 ```
 6. Open a Terminal window
-7. Navigate to your folder using cd (cd Desktop/pythonreview)
-8. Type the command ‘python helloworld.py’ and hit Enter
+7. Use the command ls to find the folder to navigate into
+8. Navigate to your folder using cd (cd Desktop/pythonreview)
+9. Type the command ‘python helloworld.py’ and hit Enter
 ***
 ### Exercise 2 - Grade Checker
 
