@@ -30,12 +30,17 @@ Load the data from the MNIST dataset.
 
 Check the shape of the new arrays.
 
-<button onclick="()=>{if(document.findViewById('p1').style.visibility = 'hidden'){ document.findViewById('p1').style.visibility = 'visible'} else {document.findViewById('p1').style.visibility = 'hidden'}}">Check Code</button>
+<script>function changeVisibility(ids){
+  if(document.findViewById(ids).style.visibility = 'hidden'){ 
+  document.findViewById(ids).style.visibility = 'visible'
+  } else {
+  document.findViewById(ids).style.visibility = 'hidden'
+  }
+}</script>
+<button onclick="changeVisibility('p1')">Check Code</button>
 <p id="p1" visibility="hidden">
-```
 print(X_train.shape)
 print(y_train.shape)
 print(X_test.shape)
 print(y_test.shape)
-```
 </p>
