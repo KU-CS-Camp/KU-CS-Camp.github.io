@@ -30,13 +30,92 @@ Load the data from the MNIST dataset.
 
 Check the shape of the new arrays.
 
-<button onclick="alert(document.getElementById('d1').style.visibility);">Check Code</button>
-
-<div id="d1" style="visibility: 'hidden';">
 ```
 print(X_train.shape)
 print(y_train.shape)
 print(X_test.shape)
 print(y_test.shape)
 ```
-</div>
+
+***
+### View Dataset Sample
+
+You can use the following code to view the first four training pictures.
+
+```
+plt.subplot(221)
+plt.imshow(X_train[0], cmap=plt.get_cmap('gray'))
+plt.subplot(222)
+plt.imshow(X_train[1], cmap=plt.get_cmap('gray'))
+plt.subplot(223)
+plt.imshow(X_train[2], cmap=plt.get_cmap('gray'))
+plt.subplot(224)
+plt.imshow(X_train[3], cmap=plt.get_cmap('gray'))
+plt.savefig('plot.png')
+```
+
+***
+### Format Data and Labels
+
+
+```
+num_pixels = X_train.shape[1] * X_train.shape[2]
+X_train = X_train.reshape(X_train.shape[0], num_pixels).astype('float32')
+X_test = X_test.reshape(X_test.shape[0], num_pixels).astype('float32')
+```
+
+Normalize the image pixel values by dividing the X arrays by 255.
+
+```
+X_train = X_train / 255
+X_test = X_test / 255
+```
+
+to_categorical is used to transform the label data before passing it to the model.
+
+```
+y_train = to_categorical(y_train)
+y_test = to_categorical(y_test)
+```
+
+Check the shape of the arrays again after they have been reshaped.
+
+```
+num_classes = y_test.shape[1]
+```
+
+Single Neural Network
+```
+model = Sequential()
+model.add(Dense(num_classes, input_dim=num_pixels, activation='softmax'))
+model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accuracy'])
+model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=10, batch_size=200)
+
+scores = model.evaluate(X_test, y_test)
+print("Baseline Error: %.2f%%" % (100-scores[1]*100))
+```
+
+```
+model = Sequential()
+model.add(Dense(500, input_dim=num_pixels, activation='relu'))
+model.add(Dense(100, activation='relu'))
+model.add(Dense(num_classes, activation='softmax'))
+model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=10, batch_size=200)
+
+scores = model.evaluate(X_test, y_test)
+print("Baseline Error: %.2f%%" % (100-scores[1]*100))
+```
+
+```
+model = Sequential()
+model.add(Dense(500, input_dim=num_pixels, activation='sigmoid'))
+model.add(Dense(100, activation='sigmoid'))
+model.add(Dense(50, activation = 'sigmoid'))
+model.add(Dense(num_classes, activation='softmax'))
+model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=10, batch_size=200)
+
+scores = model.evaluate(X_test, y_test)
+print("Baseline Error: %.2f%%" % (100-scores[1]*100))
+```
