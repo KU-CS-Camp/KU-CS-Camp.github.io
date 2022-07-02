@@ -30,7 +30,7 @@ Load the data from the MNIST dataset.
 
 Check the shape of the new arrays.
 
-<button onclick="alert(document.findViewById('d1').style.visibility);">Check Code</button>
+<button onclick="alert(document.getElementById('d1').style.visibility);">Check Code</button>
 
 <div id="d1" style="visibility: 'hidden';">
 ```
