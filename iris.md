@@ -1,6 +1,6 @@
 ---
 title: Iris Model Comparison
-layout: page
+layout: default
 filename: iris.md
 --- 
 
