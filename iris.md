@@ -103,13 +103,15 @@ To do this:
     - The output array is only the class characteristic at index 4
 - Then call train_test_split on the arrays
 
+<details markdown="1">
+<summary markdown="1">Check Your Answer</summary>
 ```
 array = dataset.values
 X = array[start_row:end_row, start_col:end_col]
 y = array[start_row:end_row, start_col:end_col]
 X_train, X_validation, Y_train, Y_validation = train_test_split(X, y, test_size=0.20, random_state=1)
 ```
-
+</details>
 ***
 ### Initiate Models
 
