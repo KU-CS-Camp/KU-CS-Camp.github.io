@@ -178,12 +178,14 @@ print("Baseline Error: %.2f%%" % (100-scores[1]*100))
 ```
 
 ### Multi-Layer Neural Network
-In this architecture, we will define a multi-layer neural network where we will add 2 hidden layers with 500 and 100 neurons.  Your code will be the same as last time with only a slight modification, so I would suggest copying and pasting that code here.
+In this architecture, we will define a multi-layer neural network where we will add 2 hidden layers with 500 and 100 neurons.  Your code will be the same as last time with only a slight modification, so I would suggest copying and pasting that code here (from model initiation to printing the score).
 
 The difference from the last model will be in the layers added to the model. The layers you will need are:
-- A Dense layer with 500 neurons, the input dimension, and activation function
-- A Dense layer with 100 neurons and activation function
-- A Dense layer with the number of neurons equal to the number of classes and activation function
+- A Dense layer with 500 neurons, the input dimension, and [relu](https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks/) activation function
+- A Dense layer with 100 neurons and relu activation function
+- A Dense layer with the number of neurons equal to the number of classes and softmax activation function
+
+You will also need to compile with the [adam optimizer](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/) rather than SGD, otherwise the compilation step remains the same.
 
 <details markdown="1">
 
@@ -205,7 +207,12 @@ print("Baseline Error: %.2f%%" % (100-scores[1]*100))
 
 ### Deep Neural Network
 
-we will add 3 hidden layers having 500, 100 and 50 neurons respectively.
+For the deep neural network, we will add 3 hidden layers having 500, 100 and 50 neurons respectively. As before, copy and paste your code from the Multi-Layer implementation. This time the compilation will be the exact same, but the layers will look like:
+
+- A Dense layer with 500 neurons, the input dimension, and [sigmoid](https://machinelearningmastery.com/a-gentle-introduction-to-sigmoid-function/) activation function
+- A Dense layer with 100 neurons and sigmoid activation function
+- A Dense layer with 50 neurons and sigmoid activation function
+- A Dense layer with the number of neurons equal to the number of classes and softmax activation function
 
 <details markdown="1">
 
