@@ -113,14 +113,27 @@ To do this:
     - For both arrays, we can use ':' to include every row
     - In the input array, we want the first 4 iris characteristics, so we use 0:4 to catch the array at index 0,1,2,3
     - The output array is only the class characteristic at index 4
-- Then call train_test_split on the arrays
+- Then call train_test_split on the arrays with the x and y arrays, a test size pf 0.2, and a random state set to 1
 
 ```
 array = dataset.values
 X = array[start_row:end_row, start_col:end_col]
 y = array[start_row:end_row, start_col:end_col]
+X_train, X_validation, Y_train, Y_validation = train_test_split(x array, y array, test_size= test size, random_state= random state)
+```
+
+<details markdown="1">
+
+<summary>Check Your Code</summary>
+
+```
+array = dataset.values
+X = array[:,0:4]
+y = array[:,4]
 X_train, X_validation, Y_train, Y_validation = train_test_split(X, y, test_size=0.20, random_state=1)
 ```
+
+</details>
 
 ***
 ### Initiate Models
@@ -166,12 +179,28 @@ The process:
 results = []
 names = []
 for name, model in models:
+	kfold = # Call StratifiedKFold() with 10 splits, random state as 1, and shuffle as true
+	cv_results = # Use cross_val_score() to generate results. Pass it the model, x and y training sets, kfold as cv, and 'accuracy' for scoring
+	# Add the cv_results to the results array as well as the name to the names array
+	print('%s: %f (%f)' % (name, cv_results.mean(), cv_results.std()))
+```
+
+<details markdown="1">
+
+<summary>Check Your Code</summary>
+
+```
+results = []
+names = []
+for name, model in models:
 	kfold = StratifiedKFold(n_splits=10, random_state=1, shuffle=True)
-	cv_results = cross_val_score(model, X_train, Y_train, cv=kfold, scoring='accuracy’)
+	cv_results = cross_val_score(model, X_train, Y_train, cv=kfold, scoring='accuracy')
 	results.append(cv_results)
 	names.append(name)
 	print('%s: %f (%f)' % (name, cv_results.mean(), cv_results.std()))
 ```
+
+</details>
 
 You can compare the results using the following boxplot:
 ```
@@ -201,10 +230,23 @@ To do this:
 - Store the results of calling model.predict() with the X validation array
 
 ```
+# Make predictions on the validation dataset
+model = # Create an instance of the model that performed the best
+# Fit the model on x and y training sets
+predictions = # Use the model to predict the x validation set
+```
+
+<details markdown="1">
+
+<summary>Check Your Code</summary>
+
+```
 model = SVC(gamma='auto')
 model.fit(X_train, Y_train)
 predictions = model.predict(X_validation)
 ```
+
+</details>
 
 ***
 ### Prediction Results
