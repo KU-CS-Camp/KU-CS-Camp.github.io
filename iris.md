@@ -4,24 +4,11 @@ layout: default
 filename: iris.md
 --- 
 
-<details markdown="1">
-
-<summary>Check Your Answer</summary>
-
-```
-array = dataset.values
-X = array[start_row:end_row, start_col:end_col]
-y = array[start_row:end_row, start_col:end_col]
-X_train, X_validation, Y_train, Y_validation = train_test_split(X, y, test_size=0.20, random_state=1)
-```
-
-</details>
-
-
 ## Iris Model Comparison
 
 The “hello world” of machine learning  is the Iris flower data set. This dataset is utilized to identify 3 species of the iris flower: Iris Setosa, Iris Versicolour, and Iris Virginica by the length and the width of the sepals and petals, in centimeters. We are going to test different models to find which has the best accuracy with this dataset and design a machine learning application with that model to identify species of the iris flower.
 
+Download the dataset [here](datasets/iris.csv)
 
 ### Initial Steps
 First, we need to load all of the libraries that will be needed. You can run the script to ensure all libraries are installed correctly (ideally the nothing will happen, and the program will finish).
@@ -63,6 +50,16 @@ In this case, the column names will be the iris characteristics in this order:
 - petal-length
 - petal-width
 - class
+
+<details markdown="1">
+
+<summary>Check Your Code</summary>
+
+```
+dataset = read_csv("iris.csv", names=['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class'])
+```
+
+</details>
 ***
 ### Summarize Data
 
