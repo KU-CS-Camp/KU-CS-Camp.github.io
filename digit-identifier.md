@@ -28,7 +28,11 @@ Load the data from the MNIST dataset.
 ***
 ### Check Array Shape
 
-Check the shape of the new arrays.
+Check the shape of the new arrays by printing them out.
+
+<details markdown="1">
+
+<summary>Check Your Answer</summary>
 
 ```
 print(X_train.shape)
@@ -36,6 +40,8 @@ print(y_train.shape)
 print(X_test.shape)
 print(y_test.shape)
 ```
+
+</details>
 
 ***
 ### View Dataset Sample
