@@ -127,6 +127,8 @@ model = Sequential()
 model.add(Dense(num_classes, input_dim=num_pixels, activation='softmax'))
 ```
 
+</details>
+
 #### Compile the Model
 Now that we have defined the first model, we need to compile it. For compiling we have to give a loss function, an optimizer, and a metric as an input.
 
