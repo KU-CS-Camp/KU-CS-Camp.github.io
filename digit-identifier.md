@@ -240,3 +240,7 @@ print("Baseline Error: %.2f%%" % (100-scores[1]*100))
 ```
 
 </details>
+
+
+***
+This exercise was adapted from [analyticsvidhya](https://www.analyticsvidhya.com/blog/2021/07/practicing-your-deep-learning-skills-a-hands-on-project-with-keras/)
