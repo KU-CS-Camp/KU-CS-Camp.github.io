@@ -142,9 +142,6 @@ We will use:
 model.compile(loss='loss function', optimizer='optimizer', metrics=['metrics'])
 ```
 
-</details>
-
-
 <details markdown="1">
 
 <summary>Check Your Answer</summary>
