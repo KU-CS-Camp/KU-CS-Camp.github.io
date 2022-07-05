@@ -230,3 +230,52 @@ plt.savefig('clusters2.png')
 plt.clf()
 ```
 
+How does this model compare to the last one?
+
+***
+### Cluster Analysis
+
+
+```
+df = # Read mall customer csv using pandas
+df = df.drop(['CustomerID'],axis=1)
+
+pred = # Call predict using the second model with PCA_components.iloc[:,:2]
+frame = pd.DataFrame(df)
+# Create a new column in frame and set it to the prediction results
+print(frame.head())
+```
+
+```
+avg_df = df.groupby(['cluster'], as_index=False).mean()
+print(avg_df)
+```
+
+<details markdown="1">
+
+<summary>Check Your Code</summary>
+
+```
+plt.bar(avg_df['cluster'], avg_df['Age'])
+plt.xlabel('Cluster')
+plt.ylabel('Age')
+plt.xticks(avg_df['cluster'])
+plt.savefig('clusters_age.png')
+plt.clf()
+
+plt.bar(avg_df['cluster'], avg_df['Annual Income (k$)'])
+plt.xlabel('Cluster')
+plt.ylabel('Income')
+plt.xticks(avg_df['cluster'])
+plt.savefig('clusters_income.png')
+plt.clf()
+
+plt.bar(avg_df['cluster'], avg_df['Spending Score (1-100)'])
+plt.xlabel('Cluster')
+plt.ylabel('Spending')
+plt.xticks(avg_df['cluster'])
+plt.savefig('clusters_score.png')
+plt.clf()
+```
+
+</details>
