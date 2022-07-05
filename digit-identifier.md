@@ -1,3 +1,9 @@
+---
+title: Digit Identifier
+layout: default
+filename: digit-identifier.md
+--- 
+
 ## Digit Identifier
 In this project, we will create a digit identifier for the MNIST handwritten digits dataset.The dataset includes images such as these:
 
