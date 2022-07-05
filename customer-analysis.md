@@ -47,14 +47,67 @@ print(df.head())
 </details>
 
 ***
-### Standardize Data
+### Optimal Clusters (k value)
+
+Now, we need to find the optimal number of clusters to create with our model. We will look at the inertia values of models create with various k sizes and plot them to determine the best k value.
+
+Steps:
+
+- Initialize an empty array named 'sum_sq_err'
+- Create a loop that iterates 10 times
+- Make a KMeans model with n_clusters equal to the loop index (it will act as the number of clusters we are testing) and an init parameter set to 'k-means++'
+- Then fit the model to the df data
+- Append the inertia_ value of the model to the sum_sq_err array
+
+<details markdown="1">
+
+<summary>Check Your Code</summary>
 
 ```
-col_names = ['Annual Income (k$)', 'Age', 'Spending Score (1-100)']
-features = df[col_names]
-# Here we scale the data points down to a smaller scale
-scaler = StandardScaler().fit(features.values)
-features = scaler.transform(features.values)
-scaled_features = pd.DataFrame(features, columns = col_names)
-print(scaled_features.head())
+sum_sq_err = []
+
+for cluster in range(1,10):
+    kmeans = KMeans(n_clusters = cluster, init='k-means++')
+    kmeans.fit(df)
+    sum_sq_err.append(kmeans.inertia_)
+```
+
+</details>
+
+Plot the resulting data using the code below. 
+
+```
+frame = pd.DataFrame({'Cluster':range(1,10), 'SSE':sum_sq_err})
+plt.figure(figsize=(12,6))
+plt.plot(frame['Cluster'], frame['SSE'], marker='o')
+plt.xlabel('Number of clusters')
+plt.ylabel('Inertia')
+plt.savefig('num_clusters_inertia.png')
+plt.clf()
+```
+
+Take a look at the saved plot. What is the optimal number of clusters? You can use ‘The Elbow Method’, which means the optimal number of clusters is where the elbow occurs.
+
+***
+### Create Optimal Model
+
+Create and fit a new model with your optimal number of clusters. This should look the same as the code you wrote in the previous for loop.
+
+<details markdown="1">
+
+<summary>Check Your Code</summary>
+
+```
+kmeans = KMeans(n_clusters = 4, init='k-means++')
+kmeans.fit(df)
+```
+
+</details>
+
+***
+### Silhouette Score
+A silhouette score is a metric used to evaluate the quality of clusters created by the k-Means algorithm. Silhouette scores range from -1 to +1. The higher the silhouette score, the better the model. The silhouette score measures the distance between all the data points within the same cluster. The lower this distance, the better the silhouette score. A silhouette score closer to +1 indicates good clustering performance, and a silhouette score closer to -1 indicates a poor clustering model.
+
+```
+print(silhouette_score(df, kmeans.labels_, metric='euclidean'))
 ```
