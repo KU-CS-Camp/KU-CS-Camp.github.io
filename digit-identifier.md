@@ -181,6 +181,12 @@ print("Baseline Error: %.2f%%" % (100-scores[1]*100))
 ```
 
 ### Multi-Layer Neural Network
+In this architecture, we will define a multi-layer neural network where we will add 2 hidden layers with 500 and 100 neurons.  Your code will be the same as last time with only a slight modification, so I would suggest copying and pasting that code here.
+
+The difference from the last model will be in the layers added to the model. The layers you will need are:
+- A Dense layer with 500 neurons, the input dimension, and activation function
+- A Dense layer with 100 neurons and activation function
+- A Dense layer with the number of neurons equal to the number of classes and activation function
 
 <details markdown="1">
 
