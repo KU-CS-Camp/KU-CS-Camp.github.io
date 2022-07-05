@@ -4,8 +4,6 @@ layout: default
 filename: iris.md
 --- 
 
-<button>hello</button>
-<div style="visibility: hidden;">hi hidden</div>
 ## Iris Model Comparison
 
 The “hello world” of machine learning  is the Iris flower data set. This dataset is utilized to identify 3 species of the iris flower: Iris Setosa, Iris Versicolour, and Iris Virginica by the length and the width of the sepals and petals, in centimeters. We are going to test different models to find which has the best accuracy with this dataset and design a machine learning application with that model to identify species of the iris flower.
