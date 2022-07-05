@@ -29,6 +29,7 @@ print('Hello, World!')
 7. Use the command ls to find the folder to navigate into
 8. Navigate to your folder using cd (cd Desktop/pythonreview)
 9. Type the command ‘python helloworld.py’ and hit Enter
+
 ***
 ### Exercise 2 - Grade Checker
 
@@ -39,6 +40,7 @@ Pretend that we have a list of grades from a hypothetical CS course. We can use 
 3. Create a function for checking grades
 4. Loop through the grades and print out ‘You passed!’ when the grade is above a 70 otherwise print ‘Sorry, you did not pass’
 5. Call the function at the bottom of the file
+
 ***
 ### Exercise 3 - NumPy Arrays
 
