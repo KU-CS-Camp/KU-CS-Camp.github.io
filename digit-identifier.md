@@ -34,7 +34,7 @@ Check the shape of the new arrays by printing them out.
 
 <details markdown="1">
 
-<summary>Check Your Answer</summary>
+<summary>Check Your Code</summary>
 
 ```
 print(X_train.shape)
@@ -122,7 +122,7 @@ model.add(Dense(number of classes, input_dim= input dimension, activation= activ
 
 <details markdown="1">
 
-<summary>Check Your Answer</summary>
+<summary>Check Your Code</summary>
 
 ```
 model = Sequential()
@@ -146,7 +146,7 @@ model.compile(loss='loss function', optimizer='optimizer', metrics=['metrics'])
 
 <details markdown="1">
 
-<summary>Check Your Answer</summary>
+<summary>Check Your Code</summary>
 
 ```
 model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accuracy'])
@@ -163,7 +163,7 @@ model.fit(training X, training Y, validation_data=(test X, test Y), epochs= epoc
 
 <details markdown="1">
 
-<summary>Check Your Answer</summary>
+<summary>Check Your Code</summary>
 
 ```
 model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=10, batch_size=200)
@@ -191,7 +191,7 @@ You will also need to compile with the [adam optimizer](https://machinelearningm
 
 <details markdown="1">
 
-<summary>Check Your Answer</summary>
+<summary>Check Your Code</summary>
 
 ```
 model = Sequential()
