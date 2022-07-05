@@ -177,6 +177,56 @@ plt.savefig('pcafeatures.png')
 Which components have the highest variance? We want to pass the two components with the highest variance to the new model.
 
 ***
-### Finding New Optimal K
+### Finding New Optimal k
 
-Follow the same procedure to find the optimal number of clusters (k) from earlier.
+Follow the same procedure to find the optimal number of clusters (k) from earlier. This time you will use the 2 chosen components from PCA to fit the model: ```PCA_components.iloc[:,:2]```
+
+Save a plot of the inertias:
+
+```
+plt.plot(range(1, 10), inertias, '-o', color='black')
+plt.xlabel('number of clusters, k')
+plt.ylabel('inertia')
+plt.xticks(range(1, 10))
+plt.savefig('clustersafterpca.png')
+plt.clf()
+```
+
+***
+### Create New Optimal Model
+
+Create a new model using the optimal k and fit the model on the 2 chosen PCA components.
+
+<details markdown="1">
+
+<summary>Check Your Code</summary>
+
+```
+model = KMeans(n_clusters=4)
+model.fit(PCA_components.iloc[:,:2])
+```
+
+</details>
+
+***
+### Evaluate New Model
+
+Calculate the silhouette score and visualize the data.
+
+```
+print(silhouette_score(PCA_components.iloc[:,:2], model.labels_, metric='euclidean'))
+
+model = KMeans(n_clusters=4)
+clusters = model.fit_predict(PCA_components.iloc[:,:2])
+df["label"] = clusters
+fig = plt.figure(figsize=(21,10))
+ax = fig.add_subplot(111, projection='3d')
+ax.scatter(df.Age[df.label == 0], df["Annual Income (k$)"][df.label == 0], df["Spending Score (1-100)"][df.label == 0], c='blue', s=60)
+ax.scatter(df.Age[df.label == 1], df["Annual Income (k$)"][df.label == 1], df["Spending Score (1-100)"][df.label == 1], c='red', s=60)
+ax.scatter(df.Age[df.label == 2], df["Annual Income (k$)"][df.label == 2], df["Spending Score (1-100)"][df.label == 2], c='green', s=60)
+ax.scatter(df.Age[df.label == 3], df["Annual Income (k$)"][df.label == 3], df["Spending Score (1-100)"][df.label == 3], c='orange', s=60)
+ax.view_init(30, 185)
+plt.savefig('clusters2.png')
+plt.clf()
+```
+
