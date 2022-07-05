@@ -3,6 +3,8 @@ In this project, we will create a digit identifier for the MNIST handwritten dig
 
 ![1_N-43GwxkmUqzJgbTJs3ocw](https://user-images.githubusercontent.com/108029475/176959309-576deb32-d3cc-4c40-89a5-327601c5afc2.png)
 
+Throughout this project, you will see 'Check Your Code' dropdowns. At certain steps I will give you more syntax than others so you can try some steps yourself. These dropdowns provide my solution to the step for you to check against if your code doesn't seem to be working, but I encourage you to try it yourself first!
+
 ### Initial Steps
 
 First, load all of the imports necessary for the project.
