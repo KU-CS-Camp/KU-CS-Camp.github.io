@@ -135,3 +135,37 @@ x_test, y_test = create_dataset(dataset_test)
 ```
 
 </details>
+
+Also, we need to reshape our data into a 3D array for use in the LSTM layers.
+
+```
+x_train = np.reshape(x_train, (x_train.shape[0], x_train.shape[1], 1))
+x_test = np.reshape(x_test, (x_test.shape[0], x_test.shape[1], 1))
+```
+
+***
+### Building the Model
+First, initialize the model as sequential. one with 96 units in the output’s dimensionality. We used return_sequences=True to make the LSTM layer with three-dimensional input and input_shape to shape our dataset.
+
+Making the dropout fraction 0.2 drops 20% of the layers. Finally, we added a dense layer with a value of 1 because we want to output one value.
+
+
+
+<details markdown="1">
+
+<summary>Check Your Code</summary>
+
+```
+model = Sequential()
+model.add(LSTM(units=96, return_sequences=True, input_shape=(x_train.shape[1], 1)))
+model.add(Dropout(0.2))
+model.add(LSTM(units=96, return_sequences=True))
+model.add(Dropout(0.2))
+model.add(LSTM(units=96, return_sequences=True))
+model.add(Dropout(0.2))
+model.add(LSTM(units=96))
+model.add(Dropout(0.2))
+model.add(Dense(units=1))
+```
+
+</details>
