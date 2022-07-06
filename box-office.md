@@ -132,3 +132,7 @@ model.score(X, y)
 </details>
 
 How does it perform? Would a different model perform better?
+
+***
+
+This exercise was adapted from [Grokking Machine Learning](https://github.com/edualgo/Grokking-Machine-Learning/tree/main/Notebooks/Movie%20Box%20office%20Prediction)
