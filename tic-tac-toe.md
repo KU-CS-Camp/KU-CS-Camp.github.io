@@ -12,4 +12,6 @@ This project will require a good amount of extra code to run the game, so I will
 
 Download the code [here](tictactoe.py)
 
+***
+
 This exercise was adapted from [towardsdatascience](https://towardsdatascience.com/reinforcement-learning-implement-tictactoe-189582bea542)
