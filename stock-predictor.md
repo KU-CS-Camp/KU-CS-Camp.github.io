@@ -238,4 +238,6 @@ How do the predictions look?
 ### Explore Other Parameter Values
 Try out different layers arrangements and epoch/batch_size values and see if you can improve your predictions!
 
+***
+
 This exercise was adapted from [Ahmad Mardeni](https://www.section.io/engineering-education/stock-price-prediction-using-python/)
