@@ -136,19 +136,19 @@ x_test, y_test = create_dataset(dataset_test)
 
 </details>
 
-Also, we need to reshape our data into a 3D array for use in the LSTM layers.
-
-```
-x_train = np.reshape(x_train, (x_train.shape[0], x_train.shape[1], 1))
-x_test = np.reshape(x_test, (x_test.shape[0], x_test.shape[1], 1))
-```
-
 ***
 ### Building the Model
-First, initialize the model as sequential. one with 96 units in the output’s dimensionality. We used return_sequences=True to make the LSTM layer with three-dimensional input and input_shape to shape our dataset.
+To begin, initialize the model as sequential. Now, we can start adding layers:
 
-Making the dropout fraction 0.2 drops 20% of the layers. Finally, we added a dense layer with a value of 1 because we want to output one value.
-
+1. LSTM layer with 96 units for the output's dimensionality, return sequence as true (makes the LSTM layer with three-dimensional input), and an input shape equal to (x_train.shape[1], 1)
+2. Dropout layer with a 0.2 dropout fraction (drops 20% of the layers)
+3. LSTM layer with 96 units and return sequence as true
+4. Dropout layer with a 0.2 dropout fraction
+5. LSTM layer with 96 units and return sequence as true
+6. Dropout layer with a 0.2 dropout fraction
+7. LSTM layer with 96 units
+8. Dropout layer with a 0.2 dropout fraction
+9. Dense layer with units set to 1 for one value output
 
 
 <details markdown="1">
@@ -169,3 +169,64 @@ model.add(Dense(units=1))
 ```
 
 </details>
+
+Also, we need to reshape our data into a 3D array for use in the LSTM layers.
+
+```
+x_train = np.reshape(x_train, (x_train.shape[0], x_train.shape[1], 1))
+x_test = np.reshape(x_test, (x_test.shape[0], x_test.shape[1], 1))
+```
+
+***
+### Compile the Model
+The final step before training the model is to compile. We want to use [mean_squared_error](https://machinelearningmastery.com/loss-and-loss-functions-for-training-deep-learning-neural-networks/) as the loss function since this is a regression problem and [adam](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/) as the optimizer to update network weights iteratively based on training data.
+
+<details markdown="1">
+
+<summary>Check Your Code</summary>
+
+```
+model.compile(loss='mean_squared_error', optimizer='adam')
+```
+
+</details>
+
+***
+### Train the Model
+Fit the model with the x and y training sets, 50 epochs (cycles through the full training dataset), and 32 as the batch size (number of training examples used in one iteration).
+
+<details markdown="1">
+
+<summary>Check Your Code</summary>
+
+```
+model.fit(x_train, y_train, epochs=50, batch_size=32)
+```
+
+</details>
+
+***
+### Predict and Visualize
+Now, it is time to call predict on the x test set.  Once you have done that, the predictions will need to be inversely transformed with the scaler (scaler.inverse_transform).
+
+<details markdown="1">
+
+<summary>Check Your Code</summary>
+
+```
+predictions = model.predict(x_test)
+predictions = scaler.inverse_transform(predictions)
+```
+
+</details>
+
+
+```
+y_test_scaled = scaler.inverse_transform(y_test.reshape(-1, 1))
+
+fig, ax = plt.subplots(figsize=(16,8))
+ax.plot(y_test_scaled, color='red', label='Original price')
+plt.plot(predictions, color='blue', label='Predicted price')
+plt.legend()
+plt.savefig('StockPrediction.png')
+```
