@@ -234,7 +234,7 @@ How does this model compare to the last one?
 
 ***
 ### Cluster Analysis
-
+Now, we can take a look at the characteristics of each cluster and draw some conclusions about them. Let's first reset the dataframe then predict on the model with our chosen PCA components. 
 
 ```
 df = # Read mall customer csv using pandas
@@ -246,10 +246,14 @@ frame = pd.DataFrame(df)
 print(frame.head())
 ```
 
+We can compare attributes of the different clusters by finding the average of all variables across each cluster.
+
 ```
 avg_df = df.groupby(['cluster'], as_index=False).mean()
 print(avg_df)
 ```
+
+Finally, try your hand at creating bar graphs for each cluster's average attributes (calculated above in avg_df). Don't forget the x and y labels and xticks. Create 3 graphs: cluster vs age, cluster vs income, cluster vs spending score
 
 <details markdown="1">
 
@@ -279,3 +283,9 @@ plt.clf()
 ```
 
 </details>
+
+What are the attributes of each clusters? How would you describe the persona of the customers in each cluster? What are some adjectives you could use to describe them?
+
+***
+
+This exercise was adapted from [natasshaselvaraj](https://www.natasshaselvaraj.com/customer-segmentation-with-python/)
