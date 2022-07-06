@@ -73,3 +73,19 @@ print(df.shape)
 ```
 
 </details>
+
+Now, split your data into training and testing sets. Use 80% of the data for training and the other 20% for testing. You can use NumPy arrays and slicing to do this.
+
+<details markdown="1">
+
+<summary>Check Your Code</summary>
+
+```
+dataset_train = np.array(df[:int(df.shape[0]*0.8)])
+dataset_test = np.array(df[int(df.shape[0]*0.8):])
+print(dataset_train.shape)
+print(dataset_test.shape)
+```
+
+</details>
+
