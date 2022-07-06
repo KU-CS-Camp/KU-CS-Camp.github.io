@@ -220,6 +220,7 @@ predictions = scaler.inverse_transform(predictions)
 
 </details>
 
+You can use the following code to visualize how well the model performs.
 
 ```
 y_test_scaled = scaler.inverse_transform(y_test.reshape(-1, 1))
@@ -230,3 +231,11 @@ plt.plot(predictions, color='blue', label='Predicted price')
 plt.legend()
 plt.savefig('StockPrediction.png')
 ```
+
+How do the predictions look?
+
+***
+### Explore Other Parameter Values
+Try out different layers arrangements and epoch/batch_size values and see if you can improve your predictions!
+
+This exercise was adapted from [Ahmad Mardeni](https://www.section.io/engineering-education/stock-price-prediction-using-python/)
