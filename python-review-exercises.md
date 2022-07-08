@@ -25,7 +25,7 @@ Every programmer's first program is Hello World. In this exercise, we will go th
 ```
 print('Hello, World!')
 ```
-6. Open a Terminal window
+6. Open a Terminal window (you can also search for this in the bottom left corner)
 7. Use the command ls to find the folder to navigate into
 8. Navigate to your folder using cd (cd Desktop/pythonreview)
 9. Type the command ‘python helloworld.py’ and hit Enter
