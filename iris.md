@@ -66,6 +66,7 @@ dataset = read_csv('iris.csv', names=['sepal-length', 'sepal-width', 'petal-leng
 
 Let’s take a look at the data using some useful commands that could also be helpful in future projects.
 
+Print out the results of each of the following commands:
 - Dimensions of the dataset - This will give us an idea of how many instances (rows) and attributes (columns) the data contains
      ```dataset.shape```
 - Peek at data - This allows us to actually view the data
