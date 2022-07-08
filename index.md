@@ -104,6 +104,15 @@ If you run programs in a terminal without running this command first, there is a
 - Presentation Runthrough
 - Complete Unfinished Projects
 
+### Resources
+- [Terminal Commands](https://www.guru99.com/linux-commands-cheat-sheet.html)
+- [Python Reference](https://www.w3schools.com/python/)
+- [NumPy Reference](https://www.w3schools.com/python/numpy/numpy_intro.asp)
+- [Pandas Reference](https://www.w3schools.com/python/pandas/default.asp)
+- [MatPlotLib Reference](https://www.w3schools.com/python/matplotlib_pyplot.asp)
+- [Tensorflow/Keras Reference](https://www.tutorialspoint.com/tensorflow/tensorflow_keras.htm)
+- [Machine Learning Resource](https://machinelearningmastery.com)
+
 ### Finish Projects Early?
 
 Here are some websites with ideas for other machine learning projects:
