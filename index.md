@@ -2,6 +2,15 @@
 
 This website will be used for downloading starter code for our projects. I will also attach the slides we go over that can be used as reference while you work on projects.
 
+### Running Code on Lab Machines
+In order to ensure all of the programs you write run correctly, we have create a virtual machine that you will use to run your code. This sounds fancy and complicated but all it will require you to do is run a single command every time you open a new terminal window. The command is:
+
+```
+source 2022summercamp/bin/activate
+```
+
+If you run programs in a terminal without running this command first, there is a chance your program will fail due to import errors.
+
 ### Monday Session 1
 
 #### Outline
