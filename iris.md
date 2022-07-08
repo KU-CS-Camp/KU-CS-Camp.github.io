@@ -37,10 +37,10 @@ from sklearn.svm import SVC
 
 Now, we need to load the iris data, and the pandas library can help. Pandas is a data analysis library that we will use throughout this camp.
 
-We have already imported the read_csv() function from pandas at the top of our file. We need to pass the function the name of the data file and the column names associated with the csv file using the following syntax:
+We have already imported the read_csv() function from pandas at the top of our file. We need to pass the location of the data file (should just be the name of the file if it's in the same directory as your Python file) and the column names associated with the csv file using the following syntax:
 
 ```
-dataset = read_csv(”filename.csv", names=[‘col1’, col2', ‘col3'])
+dataset = read_csv('filename.csv', names=[‘col1’, col2', ‘col3'])
 ```
 
 In this case, the column names will be the iris characteristics in this order: 
