@@ -72,6 +72,7 @@ print('Welcome')
 num = int(input('Enter number: '))
 ```
 
+The program will follow these steps:
 1. You will welcome the customer then lead them through your food options one by one asking if they would like that item. For each item (appetizer->entree->dessert):
 - Ask if the customer wants the item and accept a yes/no answer. For yes they can type 'y' or 'Y', and for no they can type 'n' or 'N' 
 - If they want an item, ask how many
