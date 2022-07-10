@@ -66,6 +66,12 @@ Using ‘as np’ means that when you reference the library you can just use np 
 
 Welcome to your very own restaurant! At your restaurant, you have 3 options: an appetizer, entree, and dessert.  You can choose what specific food you want these to be and how you will price them. Now, you need to create an interactive ordering program for your customers.
 
+Your program will display text in the terminal and get input from the terminal. You will need to use [Python Input/Output](https://www.geeksforgeeks.org/taking-input-from-console-in-python/) to get input from the terminal. It will look similar to the following:
+```
+print('Welcome')
+num = int(input('Enter number: '))
+```
+
 1. You will welcome the customer then lead them through your food options one by one asking if they would like that item. For each item (appetizer->entree->dessert):
 - Ask if the customer wants the item and accept a yes/no answer. For yes they can type 'y' or 'Y', and for no they can type 'n' or 'N' 
 - If they want an item, ask how many
