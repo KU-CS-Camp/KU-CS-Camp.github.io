@@ -60,3 +60,25 @@ Using ‘as np’ means that when you reference the library you can just use np 
     - Mean
     - Shape (dimensions of the array)
     - Sorted array
+
+***
+### Exercise 4 - Restaurant Menu
+
+Welcome to your very own restaurant! At your restaurant, you have 3 options: an appetizer, entree, and dessert.  You can choose what specific food you want these to be and how you will price them. Now, you need to create an interactive ordering program for your customers.
+
+1. You will welcome the customer then lead them through your food options one by one asking if they would like that item. For each item (appetizer->entree->dessert):
+- Ask if the customer wants the item and accept a yes/no answer. For yes they can type 'y' or 'Y', and for no they can type 'n' or 'N' 
+- If they want an item, ask how many
+2. Ask for the customer's age in order to apply a discount if applicable
+- 65+ get a 10% discount
+- <5 get all desserts free
+3. Finally, display their receipt
+- Display the following:
+    - Cost per item (before any discounts)
+    - Subtotal (before any discounts)
+    - Tax amount (tax is 5%)
+    - Discount amount
+    - Grand total
+
+
+
