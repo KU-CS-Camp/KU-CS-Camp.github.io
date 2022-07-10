@@ -87,5 +87,7 @@ The program will follow these steps:
     - Discount amount
     - Grand total
 
+***
 
+[Here](https://www.geeksforgeeks.org/python-projects-beginner-to-advanced/) are more Python project ideas if you finish early!
 
