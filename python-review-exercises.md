@@ -73,7 +73,7 @@ Welcome to your very own restaurant! At your restaurant, you have 3 options: an 
 - 65+ get a 10% discount
 - <5 get all desserts free
 3. Finally, display their receipt
-- Display the following:
+- Calculate/display the following:
     - Cost per item (before any discounts)
     - Subtotal (before any discounts)
     - Tax amount (tax is 5%)
