@@ -74,7 +74,7 @@ Print out the results of each of the following commands:
 - Peek at data - This allows us to actually view the data
 
 
-     ```dataset.head(num_rows)```
+     ```dataset.head(20)```
 - Statistical summary - This produces a summary of each attribute (count, mean, min/max values, etc)
 
 
@@ -87,7 +87,7 @@ Print out the results of each of the following commands:
 
 Now, we can visualize our data for an even further understanding with matplotlib.
 
-We can look at the distribution of the input variables using box and whisker plots
+We can look at the distribution of the input variables using box and whisker plots (no need to change any code)
 ```
 dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
 pyplot.show()
@@ -100,7 +100,7 @@ dataset.hist()
 pyplot.show()
 ```
 
-Do you notice any familiar distributions?
+Do you notice any familiar distributions? [hint](https://www.mathsisfun.com/data/standard-normal-distribution.html)
 
 ***
 ### Set Up Validtion
