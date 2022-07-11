@@ -74,7 +74,7 @@ plt.clf()
 ***
 ### Build and Train the Model
 
-Create an instance of the Linear Regression model then fit it with the x and y arrays. Check out the coefficient and intercept of the model after training by printing out regression.coef_ and regression.intercept_ .
+Create an instance of the Linear Regression model then fit it with the x and y arrays. Check out the coefficient and intercept of the model after training by printing out model.coef_ and model.intercept_ .
 
 <details markdown="1">
 
