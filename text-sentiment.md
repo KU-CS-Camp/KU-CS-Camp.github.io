@@ -11,3 +11,7 @@ In this project, you will use the Naïve Bayesian classifier to build a text sen
 Download the starter code [here](text-emotion.py)
 
 Download the dataset [here](datasets/naivetext.csv)
+
+***
+
+This exercise was adapted from [Grokking Machine Learning](https://github.com/edualgo/Grokking-Machine-Learning/tree/main/Notebooks/Movie%20Box%20office%20Prediction)
