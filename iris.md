@@ -207,7 +207,7 @@ You can compare the results using the following boxplot:
 ```
 pyplot.boxplot(results, labels=names)
 pyplot.title('Algorithm Comparison')
-pyplot.show()
+pyplot.savefig('alg-comp.png')
 ```
 
 ***
