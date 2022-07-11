@@ -28,7 +28,7 @@ If you run programs in a terminal without running this command first, there is a
 
 [Python Review Exercises](/python-review-exercises.md)
 
-<!-- ### Monday Session 2
+### Monday Session 2
 
 #### Outline
 - Evaluation and Metrics
@@ -49,7 +49,7 @@ If you run programs in a terminal without running this command first, there is a
 
 [Text Sentiment Identifier](/text-sentiment.md)
 
-### Tuesday Session 1
+<!-- ### Tuesday Session 1
 
 #### Outline
 - Decision Tree Classifier
