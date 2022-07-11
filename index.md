@@ -11,6 +11,29 @@ source 2022summercamp/bin/activate
 
 If you run programs in a terminal without running this command first, there is a chance your program will fail due to import errors.
 
+
+### Monday Session 2
+
+#### Outline
+- Evaluation and Metrics
+- Classifiers
+    - Naïve Bayesian
+    - Regression
+    - LDA and QDA
+    - kNN
+    - SVM
+
+#### Slides
+[Monday Session 2](/slides/CampM2.pptx)
+
+#### Projects
+[Iris Model Comparison](/iris.md)
+
+[Movie Box Office Predictor](/box-office.md)
+
+[Text Sentiment Identifier](/text-sentiment.md)
+
+
 ### Monday Session 1
 
 #### Outline
@@ -27,27 +50,6 @@ If you run programs in a terminal without running this command first, there is a
 #### Projects
 
 [Python Review Exercises](/python-review-exercises.md)
-
-### Monday Session 2
-
-#### Outline
-- Evaluation and Metrics
-- Classifiers
-    - Naïve Bayesian
-    - Regression
-    - LDA and QDA
-    - kNN
-    - SVM
-
-#### Slides
-
-
-#### Projects
-[Iris Model Comparison](/iris.md)
-
-[Movie Box Office Predictor](/box-office.md)
-
-[Text Sentiment Identifier](/text-sentiment.md)
 
 <!-- ### Tuesday Session 1
 
