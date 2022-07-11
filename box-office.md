@@ -24,7 +24,7 @@ import numpy as np
 ***
 ### Load Data
 
-Load the data using the pandas function read_csv('file.csv') then use describe() to see information about the dataset.
+Load the data using the pandas function read_csv('file.csv') then use variable.describe() to see information about the dataset.
 
 <details markdown="1">
 
