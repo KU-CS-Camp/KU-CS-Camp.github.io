@@ -8,7 +8,9 @@ filename: iris.md
 
 The “hello world” of machine learning  is the Iris flower data set. This dataset is utilized to identify 3 species of the iris flower: Iris Setosa, Iris Versicolour, and Iris Virginica by the length and the width of the sepals and petals, in centimeters. We are going to test different models to find which has the best accuracy with this dataset and design a machine learning application with that model to identify species of the iris flower.
 
-Download the dataset [here](datasets/iris.csv)
+Download the dataset [here](datasets/iris.csv) (right click and save it)
+
+For most of this project, you will need to change the parameters passed to functions. For example, func('filename.csv') should be changed to the actual file name of the dataset on your computer.
 
 ### Initial Steps
 First, we need to load all of the libraries that will be needed. You can run the script to ensure all libraries are installed correctly (ideally the nothing will happen, and the program will finish).
