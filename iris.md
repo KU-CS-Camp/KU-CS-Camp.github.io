@@ -151,6 +151,7 @@ We need to find an algorithm that works best on this data, so we will test the f
     - Gaussian Naive Bayes (NB)
     - Support Vector Machines (SVM)
 
+Copy this code exactly into your file:
 ```
 models = []
 models.append(('LR', LogisticRegression(solver='liblinear', multi_class='ovr')))
@@ -171,7 +172,7 @@ We will perform 10-fold cross validation to estimate model accuracy
 - 9 parts train and 1 part is used for testing, repeated for all combinations
 
 The process:
-- Loop through every (name, model) pair we just created
+- Create a loop that goes through every (name, model) pair we just created
 - Inside the loop
     - Create a k-fold instance with 10 parts, 1 as the random state seed, and shuffle set to True
     - Calculate the cross-validation score by passing in the model, arrays, kfold type, and accuracy scoring
@@ -205,7 +206,7 @@ for name, model in models:
 
 </details>
 
-You can compare the results using the following boxplot:
+You can compare the results using the following boxplot (copy as is):
 ```
 pyplot.boxplot(results, labels=names)
 pyplot.title('Algorithm Comparison')
