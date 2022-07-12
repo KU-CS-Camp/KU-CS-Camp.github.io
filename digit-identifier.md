@@ -14,7 +14,7 @@ Throughout this project, you will see 'Check Your Code' dropdowns. At certain st
 [Dense Layer Resource](https://analyticsindiamag.com/a-complete-understanding-of-dense-layers-in-neural-networks/)
 
 ### Create a New File
-Create a new file (and new folder if you would like) for this project. It is important that you run ```source 2022summercamp/bin/activate``` since Tensorflow requires a specific version of Python.  Make sure you then navigate into the same folder as your Python file to run it (cd /Desktop/foldername or cd /foldername).
+Create a new file (and new folder if you would like) for this project. It is important that you run ```source 2022summercamp/bin/activate``` in your terminal since Tensorflow requires a specific version of Python.  Make sure you then navigate into the same folder as your Python file to run it (cd /Desktop/foldername or cd /foldername).
 
 ***
 ### Initial Steps
