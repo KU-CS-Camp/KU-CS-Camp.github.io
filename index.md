@@ -23,9 +23,6 @@ If you run programs in a terminal without running this command first, there is a
 
 [Stock Predictor](/stock-predictor.md)
 
-Follow [this tutorial] to learn about another type of deep learning classifier call CNN (Convolutional Neural Network)
-
-
 ### Tuesday Session 1
 
 #### Outline
