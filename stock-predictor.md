@@ -19,6 +19,7 @@ First, load all of the imports necessary for the project.
 
 ```
 import pandas as pd
+from pandas import read_csv
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
@@ -36,7 +37,7 @@ Load the data using pandas function read_csv.
 <summary>Check Your Code</summary>
 
 ```
-df = pd.read_csv('TSLA.csv')
+df = read_csv('TSLA.csv')
 ```
 
 </details>
@@ -59,7 +60,7 @@ print(df.shape)
 For simplicity, we will only focus on one variable, the open price. Set your dataframe equal to the values of the 'Open' column of the dataframe. Also, reshape the dataframe so the number of rows stays the same (you can use -1 to designate this) but there is only one column.
 
 ```
-df['cloumn'].values
+df['column'].values
 df.reshape(rows, columns)
 ```
 
