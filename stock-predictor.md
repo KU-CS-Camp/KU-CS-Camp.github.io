@@ -117,6 +117,8 @@ Steps:
 5. After the loop, use np.array() on the x and y lists before you return those values from the function
 6. Call this new function on both the training and testing sets
 
+**If these steps are too confusing, look at the code in the 'Check your Code' dropdown as you read through the steps to help with understanding.**
+
 <details markdown="1">
 
 <summary>Check Your Code</summary>
