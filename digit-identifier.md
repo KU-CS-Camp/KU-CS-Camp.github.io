@@ -11,6 +11,8 @@ In this project, we will create a digit identifier for the MNIST handwritten dig
 
 Throughout this project, you will see 'Check Your Code' dropdowns. At certain steps I will give you more syntax than others so you can try some steps yourself. These dropdowns provide my solution to the step for you to check against if your code doesn't seem to be working, but I encourage you to try it yourself first!
 
+[Dense Layer Resource](https://analyticsindiamag.com/a-complete-understanding-of-dense-layers-in-neural-networks/)
+
 ### Initial Steps
 
 First, load all of the imports necessary for the project.
