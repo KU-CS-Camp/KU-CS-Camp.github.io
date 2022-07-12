@@ -13,6 +13,10 @@ Helpful Resources
 
 Download the dataset [here](datasets/TSLA.csv)
 
+### Create a New File
+Create a new file (and new folder if you would like) for this project. It is important that you run ```source 2022summercamp/bin/activate``` in your terminal since Tensorflow requires a specific version of Python.  Make sure you then navigate into the same folder as your Python file to run it (cd /Desktop/foldername or cd /foldername).
+
+***
 ### Initial Steps
 
 First, load all of the imports necessary for the project.
