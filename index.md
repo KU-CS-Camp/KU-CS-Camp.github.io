@@ -31,7 +31,6 @@ If you run programs in a terminal without running this command first, there is a
 - Guess the number game: generate a random integer from a range of 1-100, ask players to guess a number, have them keep guessing until they are correct
 - Emulate Dice Role: follow [this tutorial](https://realpython.com/python-dice-roll/)
 - Battleship game (you will need to look into 2D arrays): create a battleship game against a simple AI, a player will enter a turn through the terminal, the AI will take its turn by randomly selecting a spot, base your implementation on the [actual rules](https://www.hasbro.com/common/instruct/battleship.pdf) of battleship
-- 
 
 
 ### Monday Session 2
