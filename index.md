@@ -23,6 +23,8 @@ If you run programs in a terminal without running this command first, there is a
 
 [Stock Predictor](/stock-predictor.md)
 
+[Tic Tac Toe Game](/ttt.md)
+
 ### Tuesday Session 1
 
 #### Outline
