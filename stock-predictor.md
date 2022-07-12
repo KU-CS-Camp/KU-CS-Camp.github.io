@@ -9,6 +9,7 @@ In this project, we will build a stock predictor for Tesla's stock. We will buil
 
 Helpful Resources
 - [LSTM Networks](https://machinelearningmastery.com/gentle-introduction-long-short-term-memory-networks-experts/)
+- [LSTMs](https://www.analyticsvidhya.com/blog/2021/03/introduction-to-long-short-term-memory-lstm/)
 
 Download the dataset [here](datasets/TSLA.csv)
 
