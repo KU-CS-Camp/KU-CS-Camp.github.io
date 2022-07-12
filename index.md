@@ -11,6 +11,19 @@ source 2022summercamp/bin/activate
 
 If you run programs in a terminal without running this command first, there is a chance your program will fail due to import errors.
 
+### Tuesday Session 1
+
+#### Outline
+- Decision Tree Classifier
+- Neural Networks
+
+#### Slides
+
+
+#### Projects
+
+[Digit Identifier](/digit-identifier.md)
+
 
 ### Monday Session 2
 
@@ -51,18 +64,7 @@ If you run programs in a terminal without running this command first, there is a
 
 [Python Review Exercises](/python-review-exercises.md)
 
-<!-- ### Tuesday Session 1
-
-#### Outline
-- Decision Tree Classifier
-- Neural Networks
-
-#### Slides
-
-
-#### Projects
-
-[Digit Identifier](/digit-identifier.md)
+<!-- 
 
 ### Tuesday Session 2
 
