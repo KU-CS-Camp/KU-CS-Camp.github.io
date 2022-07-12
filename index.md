@@ -23,7 +23,16 @@ If you run programs in a terminal without running this command first, there is a
 
 [Stock Predictor](/stock-predictor.md)
 
-[Tic Tac Toe Game](/ttt.md)
+- Guess the number game (generate a random integer from a range of 1-100, ask players to guess a number, have them keep guessing until they are correct)
+- Mad Libs (Think of sentences like 'I can't start my day without my blank!' and ask the user for a noun/adjective/etc to fill in the blank, then display the completed sentence or story)
+- Rock, Paper, Scissors (get terminal input and play against AI choosing a random action)
+- Hangman
+
+More Difficult Games:
+- Tic Tac Toe
+- Battleship
+- Snake
+- Pong
 
 ### Tuesday Session 1
 
