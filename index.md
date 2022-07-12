@@ -11,6 +11,21 @@ source 2022summercamp/bin/activate
 
 If you run programs in a terminal without running this command first, there is a chance your program will fail due to import errors.
 
+### Tuesday Session 2
+
+#### Outline
+- Reoccurent Neural Networks
+
+#### Slides
+
+
+#### Projects
+
+[Stock Predictor](/stock-predictor.md)
+
+Follow [this tutorial] to learn about another type of deep learning classifier call CNN (Convolutional Neural Network)
+
+
 ### Tuesday Session 1
 
 #### Outline
@@ -75,20 +90,6 @@ If you run programs in a terminal without running this command first, there is a
 
 <!-- 
 
-### Tuesday Session 2
-
-#### Outline
-- Reoccurent Neural Networks
-- Longer Time for Projects
-
-#### Slides
-
-
-#### Projects
-
-[Stock Predictor](/stock-predictor.md)
-
-Follow [this tutorial] to learn about another type of deep learning classifier call CNN (Convolutional Neural Network)
 
 ### Thursday Session 1
 
