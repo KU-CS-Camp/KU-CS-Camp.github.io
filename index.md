@@ -22,6 +22,8 @@ If you run programs in a terminal without running this command first, there is a
 
 #### Projects
 
+[Car Sales Predictor](/dt.md)
+
 [Digit Identifier](/digit-identifier.md)
 
 #### Python Challenges
