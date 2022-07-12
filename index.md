@@ -17,7 +17,7 @@ If you run programs in a terminal without running this command first, there is a
 - Reoccurent Neural Networks
 
 #### Slides
-
+[Tuesday Session 2](/slides/CampTu2.pptx)
 
 #### Projects
 
