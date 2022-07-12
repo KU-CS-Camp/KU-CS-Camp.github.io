@@ -19,7 +19,7 @@ If you run programs in a terminal without running this command first, there is a
 - Deep Learning
 
 #### Slides
-
+[Tuesday Session 1](/slides/CampTu1.pptx)
 
 #### Projects
 
