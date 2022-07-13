@@ -51,4 +51,81 @@ km = KMeans(n_clusters=2)
 model = km.fit(oldfaithful)
 ```
 
+### Plot Clusters
 
+```
+colors=["red","blue"]
+plt.figure(figsize=(8,6))
+for i in range(np.max(model.labels_)+1):
+    plt.scatter(oldfaithful[model.labels_==i].TimeEruption, oldfaithful[model.labels_==i].TimeWaiting, label=i, c=colors[i], alpha=0.5, s=40)
+plt.scatter(model.cluster_centers_[:,0], model.cluster_centers_[:,1], label='Centers', c="black", s=100)
+plt.title("K-Means Clustering of oldfaithful Data",size=20)
+plt.xlabel("Eruption Time")
+plt.ylabel("Waiting Time")
+plt.title('Scatter plot of Eruption Time vs. Waiting Time')
+plt.legend()
+plt.savefig('clusters.png')
+```
+
+###  Define a Distance Function
+We want to define a distance function that will be called on each sample of data. This function will calculate the Euclidean distance between a data point and the center of its cluster.
+
+Add the following parameters to the function declaration:
+- TimeEruption
+- TimeWaiting
+- Label (label of the cluster)
+
+We also need to get the center values for the cluster we are looking at.
+```
+center_TimeEruption =  model.cluster_centers_[label,0]
+center_TimeWaiting =  model.cluster_centers_[label,1]
+```
+
+Now, to calculate the Euclidean distance, we set a variable equal to this equation: $\sqrt{(TimeEruption - center_TimeEruption)^2 + (TimeWaiting - center_TimeWaiting)^2}$.
+- To code a square root, ``` np.sqrt(equation)```
+- Squaring a value can be done like this: ``` (value) ** 2 ```
+
+Finally, we return the distance value from the function and round it at the same time (no need to change this code).
+```
+return np.round(distance, 3)
+```
+
+```
+def distance_from_center(TimeEruption, TimeWaiting, label):
+    center_TimeEruption =  model.cluster_centers_[label,0]
+    center_TimeWaiting =  model.cluster_centers_[label,1]
+    distance = np.sqrt((TimeEruption - center_TimeEruption) ** 2 + (TimeWaiting - center_TimeWaiting) ** 2)
+    return np.round(distance, 3)
+```
+
+### Add Values to Dataset
+Now, let's add both the labels from the model and distances to our dataset variable (this way we have easy access to them).  Set oldfaithful['label'] equal to model.labels_ and oldfaithful['distance'] equal to a function call to distance_from_center with the following parameters: oldfaithful.TimeEruption, oldfaithful.TimeWaiting, oldfaithful.label
+
+```
+oldfaithful['label'] = model.labels_
+oldfaithful['distance'] = distance_from_center(oldfaithful.TimeEruption, oldfaithful.TimeWaiting, oldfaithful.label)
+```
+
+### Finding the Outliers
+
+```
+outliers_idx = list(oldfaithful.sort_values('distance', ascending=False).head(10).index)
+outliers = oldfaithful[oldfaithful.index.isin(outliers_idx)]
+```
+
+### Final Plot
+
+```
+plt.figure(figsize=(8,6))
+colors=["red","blue","green","orange"]
+for i in range(np.max(model.labels_)+1):
+    plt.scatter(oldfaithful[model.labels_==i].TimeEruption, oldfaithful[model.labels_==i].TimeWaiting, label=i, c=colors[i], alpha=0.5, s=40)
+plt.scatter(outliers.TimeEruption, outliers.TimeWaiting, c='aqua', s=100)
+plt.scatter(model.cluster_centers_[:,0], model.cluster_centers_[:,1], label='Centers', c="black", s=100)
+plt.title("K-Means Clustering of oldfaithful Data",size=20)
+plt.xlabel("Annual TimeEruption")
+plt.ylabel("TimeWaiting")
+plt.title('Scatter plot of Annual TimeEruption vs. TimeWaiting')
+plt.legend()
+plt.show()
+```
