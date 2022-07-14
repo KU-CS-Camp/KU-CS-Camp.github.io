@@ -19,6 +19,7 @@ If you run programs in a terminal without running this command first, there is a
 
 #### Slides
 
+[Thursday Session 1](/slides/CampTh1.pptx)
 
 #### Projects
 
