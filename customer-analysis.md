@@ -28,12 +28,7 @@ from mpl_toolkits.mplot3d import Axes3D
 ***
 ### Load Data
 
-Load the data from the dataset and print the head of the dataset to ensure it has loaded correctly.
-
-```
-df = # Load the data from csv file using pandas (pd) read_csv function
-# Print the head of the dataset
-```
+Load the data from the dataset into a variable named df and print the head of the dataset to ensure it has loaded correctly.
 
 <details markdown="1">
 
