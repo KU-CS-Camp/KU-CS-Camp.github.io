@@ -126,6 +126,8 @@ Is this a good score? Let's visualize the model as well.
 The following code will show and save a 3D plot of the clusters.
 
 ```
+clusters = kmeans.fit_predict(df.iloc[:,1:])
+df['label'] = clusters
 fig = plt.figure(figsize=(21,10))
 ax = fig.add_subplot(111, projection='3d')
 ax.scatter(df.Age[df.label == 0], df["Annual Income (k$)"][df.label == 0], df["Spending Score (1-100)"][df.label == 0], c='blue', s=60)
