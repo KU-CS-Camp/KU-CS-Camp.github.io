@@ -114,9 +114,9 @@ def distance_from_center(TimeEruption, TimeWaiting, label):
     center_TimeWaiting =  model.cluster_centers_[label,1]
     distance = np.sqrt((TimeEruption - center_TimeEruption) ** 2 + (TimeWaiting - center_TimeWaiting) ** 2)
     return np.round(distance, 3)
-``
+```
 
-</details>`
+</details>
 
 ### Add Values to Dataset
 Now, let's add both the labels from the model and distances to our dataset variable (this way we have easy access to them).  Set oldfaithful['label'] equal to model.labels_ and oldfaithful['distance'] equal to a function call to distance_from_center with the following parameters: oldfaithful.TimeEruption, oldfaithful.TimeWaiting, oldfaithful.label
