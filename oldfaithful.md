@@ -87,7 +87,7 @@ We want to define a distance function that will be called on each sample of data
 Add the following parameters to the function declaration:
 - TimeEruption
 - TimeWaiting
-- Label (label of the cluster)
+- Label
 
 We also need to get the center values for the cluster we are looking at.
 ```
