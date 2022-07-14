@@ -1,5 +1,5 @@
 ## Old Faithful Eruption Clustering
-Another use of k-means clustering is to identifying outliers in data. If you know data points are outliers, you can look into what factors cause them to be different. For instance, we will be looking at the the eruption time and waiting time of Old Faithful in Yellowstone, and if there are outliers in this data, we could look into the other factors causing the change such as weather.
+Another use of k-means clustering is to identifying outliers in data. If you know data points are outliers, you can look into what factors cause them to be different. For instance, we will be looking at the the eruption time and waiting time of Old Faithful in Yellowstone, and if there are outliers in this data, we could look into the other factors causing the change.
 
 Download the dataset [here](oldfaithful.csv)
 
@@ -16,6 +16,7 @@ import matplotlib.pyplot as plt
 ```
 
 ### Load Data
+Load the data as normal with read_csv()
 
 ```
 oldfaithful = read_csv('oldfaithful.csv')
@@ -30,6 +31,7 @@ oldfaithful = pd.DataFrame(ss.fit_transform(oldfaithful), columns=['TimeEruption
 ```
 
 ### Initial Plot of Data
+To view a plot of the data points, utilize the following code:
 
 ```
 plt.figure(figsize=(8,6))
@@ -41,10 +43,10 @@ plt.savefig('initialfig.png')
 ```
 
 ### Choose K
-Another technique for choosing the value of k is by simply looking at a plot of the data. Look at the saved plot you just created and determine what you think the k value should be for this data.
+One technique for choosing the value of k is by simply looking at a plot of the data. Look at the saved plot you just created and determine what you think the k value (number of clusters) should be for this data.
 
 ### Create and Train Model
-Now, create a KMeans model with the number of clusters you determined in the previous step.  Train/fit the model on the dataset (no need to split into different arrays this time)
+Now, create a KMeans model with the number of clusters (n_clusters) you determined in the previous step.  Train/fit the model on the dataset (no need to split into different arrays this time).
 
 ```
 km = KMeans(n_clusters=2)
@@ -52,6 +54,7 @@ model = km.fit(oldfaithful)
 ```
 
 ### Plot Clusters
+We can now look at these clusters by plotting the data with different colors.
 
 ```
 colors=["red","blue"]
@@ -107,6 +110,7 @@ oldfaithful['distance'] = distance_from_center(oldfaithful.TimeEruption, oldfait
 ```
 
 ### Finding the Outliers
+It is time to find the outliers. The outliers are the datapoints that lay the farthest away from the center of their cluster. The code below will sort the distances we generated and choose the 10 largest distances as our outliers.
 
 ```
 outliers_idx = list(oldfaithful.sort_values('distance', ascending=False).head(10).index)
@@ -114,6 +118,7 @@ outliers = oldfaithful[oldfaithful.index.isin(outliers_idx)]
 ```
 
 ### Final Plot
+Use the following code to plot the outliers.  What do you think are some factors that could caused these outliers? In real-life, looking into these other contributing features could help us in future predictions.
 
 ```
 plt.figure(figsize=(8,6))
@@ -127,5 +132,7 @@ plt.xlabel("Annual TimeEruption")
 plt.ylabel("TimeWaiting")
 plt.title('Scatter plot of Annual TimeEruption vs. TimeWaiting')
 plt.legend()
-plt.show()
+plt.savefig('outliersfig.png)
 ```
+
+
