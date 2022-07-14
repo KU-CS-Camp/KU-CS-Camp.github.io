@@ -11,6 +11,22 @@ source 2022summercamp/bin/activate
 
 If you run programs in a terminal without running this command first, there is a chance your program will fail due to import errors.
 
+### Thursday Session 1
+
+#### Outline
+- Unsupervised Machine Learning
+- k-Means Clustering
+
+#### Slides
+
+
+#### Projects
+
+[Old Faithful Clustering](/oldfaithful.md)
+
+[Customer Analysis](/customer-analysis.md)
+
+
 ### Tuesday Session 2
 
 #### Outline
@@ -99,18 +115,6 @@ More Difficult Games:
 
 <!-- 
 
-
-### Thursday Session 1
-
-#### Outline
-- Unsupervised Machine Learning
-- k-Means Clustering
-
-#### Slides
-
-
-#### Projects
-[Customer Analysis](/customer-analysis.md)
 
 ### Thursday Session 2
 
