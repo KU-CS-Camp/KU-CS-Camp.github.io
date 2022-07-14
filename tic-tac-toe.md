@@ -8,9 +8,7 @@ filename: tic-tac-toe.md
 
 Who doesn't love a good game of tic tac toe? In this project, we will use reinforcement learning, more specifically Q-learning, to teach an agent how to play tic tac toe.
 
-This project will require a good amount of extra code to run the game, so I will provide you 'skeleton' code. This basically means I will provide a partially filled out layout/template of code that you will need to finish for the project to be complete. I use the keyword 'TODO' to signify where you will need to work in the file.
-
-Download the code [here](tictactoe.py)
+This project will require a good amount of extra code to run the game, so I will provide you that code. To finish the reinforcement learning part of this project, search for the keyword 'TODO', which signifies where you will need to work in the file.
 
 A summary of the tasks:
 
@@ -23,11 +21,12 @@ A summary of the tasks:
         - For rewarding the AI/computer use self.p1.feedReward(reward)
         - For rewarding the AI/computer use self.p2.feedReward(reward)
 - Complete the equation for feeding reward
-    - The equation should look like: current_state_value = current_state_value + learning_rate * ((decay_gamma * reward) - current_state_value)
-        -  The current state value to be updated is self.states_value[st]
-        -  Learning rate is self.lr
-        -  Decay gamma is self.decay_gamma
+    - The equation should look like: ``` current_state_value = current_state_value + learning_rate * ((decay_gamma * reward) - current_state_value) ```
+        -  The current state value to be updated is ```self.states_value[st]```
+        -  Learning rate is ```self.lr```
+        -  Decay gamma is ```self.decay_gamma```
 
+Download the code [here](tictactoe.py)
 
 ***
 
