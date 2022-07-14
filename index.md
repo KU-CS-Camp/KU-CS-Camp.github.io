@@ -11,6 +11,8 @@ source 2022summercamp/bin/activate
 
 If you run programs in a terminal without running this command first, there is a chance your program will fail due to import errors.
 
+[Customer Analysis](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EdIEtR3Nr6tOr487x-cQYykBj-9Ij7SVSTfOtToXFQ9kng?e=FJaZ8x)
+
 ### Thursday Session 2
 
 #### Outline
