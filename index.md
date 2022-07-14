@@ -11,6 +11,25 @@ source 2022summercamp/bin/activate
 
 If you run programs in a terminal without running this command first, there is a chance your program will fail due to import errors.
 
+### Thursday Session 2
+
+#### Outline
+- Reinforcement Learning
+- Q-Learning
+
+#### Slides
+
+
+#### Projects
+
+[Tic Tac Toe](/tic-tac-toe.md)
+
+[Gridworld](/gridworld.md)
+
+[Word Game](/wordgame.md)
+
+Once done, work on project from yesterday if you were making tic tac toe, pong, battleship, etc.
+
 ### Thursday Session 1
 
 #### Outline
@@ -121,18 +140,7 @@ More Difficult Games:
 <!-- 
 
 
-### Thursday Session 2
 
-#### Outline
-- Reinforcement Learning
-- Q-Learning
-
-#### Slides
-
-
-#### Projects
-
-[Tic Tac Toe](/tic-tac-toe.md)
 
 ### Friday Session
 
