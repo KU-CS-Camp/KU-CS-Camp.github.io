@@ -26,6 +26,10 @@ If you run programs in a terminal without running this command first, there is a
 
 [Customer Analysis](/customer-analysis.md)
 
+[Word Game](/wordgame.md)
+
+Once done, work on project from yesterday if you were making tic tac toe, pong, battleship, etc.
+
 
 ### Tuesday Session 2
 
