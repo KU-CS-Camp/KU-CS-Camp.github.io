@@ -1,5 +1,5 @@
 ## Old Faithful Eruption Clustering
-Another use of k-means clustering is to identifying outliers in data. If you know data points are outliers, you can look into what factors cause them to be different. For instance, we will be looking at the the eruption time and waiting time of Old Faithful in Yellowstone, and if there are outliers in this data, we could look into the other factors causing the change.
+One use of k-means clustering is to identifying outliers in data. If you know data points are outliers, you can look into what factors cause them to be different. For instance, we will be looking at the the eruption time and waiting time of Old Faithful in Yellowstone, and if there are outliers in this data, we could look into the other factors causing the change.
 
 Download the dataset [here](oldfaithful.csv)
 
@@ -18,9 +18,15 @@ import matplotlib.pyplot as plt
 ### Load Data
 Load the data as normal with read_csv()
 
+<details markdown="1">
+
+<summary>Check Your Code</summary>
+
 ```
 oldfaithful = read_csv('oldfaithful.csv')
 ```
+
+</details>
 
 ### Scale Data
 We will need to scale the values of our data down to have a value within 0-1. The following code will take care of that for us:
@@ -48,10 +54,15 @@ One technique for choosing the value of k is by simply looking at a plot of the 
 ### Create and Train Model
 Now, create a KMeans model with the number of clusters (n_clusters) you determined in the previous step.  Train/fit the model on the dataset (no need to split into different arrays this time).
 
+<details markdown="1">
+
+<summary>Check Your Code</summary>
+
 ```
 km = KMeans(n_clusters=2)
 model = km.fit(oldfaithful)
 ```
+</details>
 
 ### Plot Clusters
 We can now look at these clusters by plotting the data with different colors.
@@ -93,21 +104,33 @@ Finally, we return the distance value from the function and round it at the same
 return np.round(distance, 3)
 ```
 
+<details markdown="1">
+
+<summary>Check Your Code</summary>
+
 ```
 def distance_from_center(TimeEruption, TimeWaiting, label):
     center_TimeEruption =  model.cluster_centers_[label,0]
     center_TimeWaiting =  model.cluster_centers_[label,1]
     distance = np.sqrt((TimeEruption - center_TimeEruption) ** 2 + (TimeWaiting - center_TimeWaiting) ** 2)
     return np.round(distance, 3)
-```
+``
+
+</details>`
 
 ### Add Values to Dataset
 Now, let's add both the labels from the model and distances to our dataset variable (this way we have easy access to them).  Set oldfaithful['label'] equal to model.labels_ and oldfaithful['distance'] equal to a function call to distance_from_center with the following parameters: oldfaithful.TimeEruption, oldfaithful.TimeWaiting, oldfaithful.label
+
+<details markdown="1">
+
+<summary>Check Your Code</summary>
 
 ```
 oldfaithful['label'] = model.labels_
 oldfaithful['distance'] = distance_from_center(oldfaithful.TimeEruption, oldfaithful.TimeWaiting, oldfaithful.label)
 ```
+
+</details>
 
 ### Finding the Outliers
 It is time to find the outliers. The outliers are the datapoints that lay the farthest away from the center of their cluster. The code below will sort the distances we generated and choose the 10 largest distances as our outliers.
