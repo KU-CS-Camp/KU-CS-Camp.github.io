@@ -81,7 +81,18 @@ plt.savefig('num_clusters_inertia.png')
 plt.clf()
 ```
 
-Take a look at the saved plot. What is the optimal number of clusters? You can use ‘The Elbow Method’, which means the optimal number of clusters is where the elbow occurs.
+***
+### Determine the K Value
+
+Take a look at the saved plot. What is the optimal number of clusters? You can use ‘The Elbow Method’, which means the optimal number of clusters is at the point after which the distortion/inertia starts decreasing in a linear fashion.
+
+<details markdown="1">
+
+<summary>My Findings</summary>
+
+I found that there was a linear decline after a k value of 4.
+
+</details>
 
 ***
 ### Create Optimal Model
@@ -93,7 +104,7 @@ Create and fit a new model with your optimal number of clusters. This should loo
 <summary>Check Your Code</summary>
 
 ```
-kmeans = KMeans(n_clusters = 4
+kmeans = KMeans(n_clusters = 4)
 kmeans.fit(df)
 ```
 
@@ -139,12 +150,12 @@ I don't see great cluster separation since the different color points are overla
 ***
 ### Improving the Model
 
-One way to our imporve our model is to perform feature selection.  PCA is a technique that helps us reduce the dimension of a dataset. When we run PCA on a data frame, new components are created. These components explain the maximum variance in the model.
+One way to our improve our model is to perform feature selection.  PCA is a technique that helps us reduce the dimension of a dataset. When we run PCA on a data frame, new components are created. These components explain the maximum variance in the model.
 
 Steps:
-1. Create an instance of PCA with 4 n_components
-2. Call pca.fit_transform on the dataframe (df)
-3. Create a new DataFrame called PCA_components with the results of the previous step
+1. Create an instance of PCA() with 4 n_components as a parameter
+2. Store the results of calling pca.fit_transform on the dataframe (df) into a variable
+3. Create a new DataFrame called PCA_components with the results of the previous step as a parameter
 
 <details markdown="1">
 
@@ -169,12 +180,30 @@ plt.xticks(features)
 plt.savefig('pcafeatures.png')
 ```
 
-Which components have the highest variance? We want to pass the two components with the highest variance to the new model.
+***
+### Choose Components
+
+Which components/features have the highest variance? We want to pass the two components with the highest variance to the new model.
 
 ***
 ### Finding New Optimal k
 
-Follow the same procedure to find the optimal number of clusters (k) from earlier. This time you will use the 2 chosen components from PCA to fit the model: ```PCA_components.iloc[:,:2]```
+Copy your for loop from earlier to find the optimal number of clusters (k) with the new features. You will need to change the parameter passed to model.fit() to be the 2 chosen components/features from PCA (iloc is used for accessing data since this is a dataframe not an array): ```PCA_components.iloc[:,:2]```
+
+<details markdown="1">
+
+<summary>Check Your Code</summary>
+
+```
+inertias = []
+
+for k in range(1, 10):
+    model = KMeans(n_clusters=k)
+    model.fit(PCA_components.iloc[:,:2])
+    inertias.append(model.inertia_)
+```
+
+</details>
 
 Save a plot of the inertias:
 
@@ -190,7 +219,7 @@ plt.clf()
 ***
 ### Create New Optimal Model
 
-Create a new model using the optimal k and fit the model on the 2 chosen PCA components.
+Create a new model using the optimal k and fit the model on the 2 chosen PCA components (just as you did in the last step).
 
 <details markdown="1">
 
@@ -232,12 +261,14 @@ How does this model compare to the last one?
 Now, we can take a look at the characteristics of each cluster and draw some conclusions about them. Let's first reset the dataframe then predict on the model with our chosen PCA components. 
 
 ```
-df = # Read mall customer csv using pandas
+# Read mall customer csv using read_csv
+df = 
 df = df.drop(['CustomerID'],axis=1)
 
-pred = # Call predict using the second model with PCA_components.iloc[:,:2]
+# Call predict using the newest model with PCA_components.iloc[:,:2]
+pred = 
 frame = pd.DataFrame(df)
-# Create a new column in frame and set it to the prediction results
+frame['cluster'] = pred
 print(frame.head())
 ```
 
@@ -248,7 +279,7 @@ avg_df = df.groupby(['cluster'], as_index=False).mean()
 print(avg_df)
 ```
 
-Finally, try your hand at creating bar graphs for each cluster's average attributes (calculated above in avg_df). Don't forget the x and y labels and xticks. Create 3 graphs: cluster vs age, cluster vs income, cluster vs spending score
+Finally, try your hand at creating bar graphs for each cluster's average attributes (calculated above in avg_df). Don't forget the x and y labels and xticks. Create 3 graphs: cluster vs age, cluster vs income, cluster vs spending score. ([Bar Graph Tutorial](https://www.geeksforgeeks.org/bar-plot-in-matplotlib/))
 
 <details markdown="1">
 
@@ -279,7 +310,10 @@ plt.clf()
 
 </details>
 
-What are the attributes of each clusters? How would you describe the persona of the customers in each cluster? What are some adjectives you could use to describe them?
+***
+### Final Analysis
+
+Think of each of these clusters as a different kind of customer. What are the attributes of each cluster? How would you describe the persona of the customers in each cluster? What are some adjectives you could use to describe them?
 
 ***
 
