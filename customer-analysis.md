@@ -49,10 +49,10 @@ Now, we need to find the optimal number of clusters to create with our model. We
 Steps:
 
 - Initialize an empty array named 'sum_sq_err'
-- Create a loop that iterates 10 times
-- Make a KMeans model with n_clusters equal to the loop index (it will act as the number of clusters we are testing) and an init parameter set to 'k-means++'
-- Then fit the model to the df data
-- Append the inertia_ value of the model to the sum_sq_err array
+- Create a loop that runs 10 times (use range(start,end))
+- Initalize a KMeans model with n_clusters equal to the loop index (it will act as the number of clusters we are testing)
+- Then fit the model to the data in df
+- Add the inertia_ value of the model to the sum_sq_err array usint sum_sq_err.append()
 
 <details markdown="1">
 
@@ -62,7 +62,7 @@ Steps:
 sum_sq_err = []
 
 for cluster in range(1,10):
-    kmeans = KMeans(n_clusters = cluster, init='k-means++')
+    kmeans = KMeans(n_clusters = cluster)
     kmeans.fit(df)
     sum_sq_err.append(kmeans.inertia_)
 ```
@@ -93,7 +93,7 @@ Create and fit a new model with your optimal number of clusters. This should loo
 <summary>Check Your Code</summary>
 
 ```
-kmeans = KMeans(n_clusters = 4, init='k-means++')
+kmeans = KMeans(n_clusters = 4
 kmeans.fit(df)
 ```
 
