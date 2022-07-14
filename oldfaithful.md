@@ -1,7 +1,7 @@
 ## Old Faithful Eruption Clustering
 One use of k-means clustering is to identifying outliers in data. If you know data points are outliers, you can look into what factors cause them to be different. For instance, we will be looking at the the eruption time and waiting time of Old Faithful in Yellowstone, and if there are outliers in this data, we could look into the other factors causing the change.
 
-Download the dataset [here](oldfaithful.csv)
+Download the dataset [here](/datasets/oldfaithful.csv)
 
 ### Add Imports
 
