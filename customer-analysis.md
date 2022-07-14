@@ -317,6 +317,41 @@ plt.clf()
 
 Think of each of these clusters as a different kind of customer. What are the attributes of each cluster? How would you describe the persona of the customers in each cluster? What are some adjectives you could use to describe them?
 
+
+```
+df = pd.read_csv('Mall_Customers.csv')
+df = df.drop(['CustomerID'],axis=1)
+
+pred = model.predict(PCA_components.iloc[:,:2])
+frame = pd.DataFrame(df)
+frame['cluster'] = pred
+print(frame.head())
+
+avg_df = df.groupby(['cluster'], as_index=False).mean()
+print(avg_df)
+
+plt.bar(avg_df['cluster'], avg_df['Age'])
+plt.xlabel('Cluster')
+plt.ylabel('Age')
+plt.xticks(avg_df['cluster'])
+plt.savefig('clusters_age.png')
+plt.clf()
+
+plt.bar(avg_df['cluster'], avg_df['Annual Income (k$)'])
+plt.xlabel('Cluster')
+plt.ylabel('Income')
+plt.xticks(avg_df['cluster'])
+plt.savefig('clusters_income.png')
+plt.clf()
+
+plt.bar(avg_df['cluster'], avg_df['Spending Score (1-100)'])
+plt.xlabel('Cluster')
+plt.ylabel('Spending')
+plt.xticks(avg_df['cluster'])
+plt.savefig('clusters_score.png')
+plt.clf()
+```
+
 ***
 
 This exercise was adapted from [natasshaselvaraj](https://www.natasshaselvaraj.com/customer-segmentation-with-python/)
