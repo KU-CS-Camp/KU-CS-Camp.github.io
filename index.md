@@ -11,7 +11,38 @@ source 2022summercamp/bin/activate
 
 If you run programs in a terminal without running this command first, there is a chance your program will fail due to import errors.
 
-[Customer Analysis](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EdIEtR3Nr6tOr487x-cQYykBj-9Ij7SVSTfOtToXFQ9kng?e=FJaZ8x)
+
+### Friday Session
+
+#### Outline
+- Create Presentation
+- Presentation Runthrough
+
+Group 1: [Customer Analysis](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EdIEtR3Nr6tOr487x-cQYykBj-9Ij7SVSTfOtToXFQ9kng?e=qHY2MK)
+
+Group 2: [Iris Model Comparison](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EaGKlAv16QtJhbKaC_6n52gBBYth5NQk3EwwdXDtwQT5zQ?e=alrvF1)
+
+Group 3: [Stock Predictor](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/Ecl4KiK-QT1GvwHgmNZB0sABB4AP6ZfJdxQIirc-QHh1aw?e=IqzFCM)
+
+Group 4: [Digit Identifier](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EZZYtaIRSWFLtrupOHlgUygBJQZ-pGpXxzKcagRThOd22Q?e=bZ29UG)
+
+Group 5: [Old Faithful](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EZZ_pefRu9ZGjetEpELBVHoBbwILvt198kThsU_Cqo2GMQ?e=1dkLL5)
+
+Group 6: [Car Sales Predictor](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EVEvM7ptvYZKr0N8gCPesqYB_-qvbm_1v1SCOwCRdiYczQ?e=NQ3Vom)
+
+Group 7: [Tic Tac Toe](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/ER_EJcpsEEpPrKyHjLeW0OIBB1GDF104U8Si4MrlBZiQWA?e=ykr2FX)
+
+Group 8: [Box Office Predictor](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/Ef-XugFzUr1PkXh9t-r_nBsBWk5VIBinfhE9rG0IfOEcAg?e=nFJzEF)
+
+Cooper: [Gridworld](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EXdVGJr4UdFIoSlIB1yPazkB9V2yMN-QfdARCqC6Bdq6ew?e=Z00aMt)
+
+Mad Libs, Wordle, Pong, Number Guessing: [Python Side Projects](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EfhST2jDHOdNlKVEUBcjqdoBbipXlbHEqZFJW95ioHXR1Q?e=0R43Yo)
+
+
+
+
+
+
 
 ### Thursday Session 2
 
@@ -140,17 +171,7 @@ More Difficult Games:
 
 [Python Review Exercises](/python-review-exercises.md)
 
-<!-- 
 
-
-
-
-### Friday Session
-
-#### Outline
-- Create Presentation
-- Presentation Runthrough
-- Complete Unfinished Projects -->
 
 ### Resources
 - [Terminal Commands](https://www.guru99.com/linux-commands-cheat-sheet.html)
