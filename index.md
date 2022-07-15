@@ -18,6 +18,21 @@ If you run programs in a terminal without running this command first, there is a
 - Create Presentation
 - Presentation Runthrough
 
+Each table will present as a group.
+Here are the group numbers:
+```
+|--------------------------------|
+|             Front              |
+|                                |
+|    (2)            (1)          |
+|                            (8) |
+|    (3)            (4)          |
+|                            (7) |
+|    (5)            (6)          |
+|                                |
+|--door--------------------------|
+```
+
 Group 1: [Customer Analysis](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EdIEtR3Nr6tOr487x-cQYykBj-9Ij7SVSTfOtToXFQ9kng?e=qHY2MK)
 
 Group 2: [Iris Model Comparison](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EaGKlAv16QtJhbKaC_6n52gBBYth5NQk3EwwdXDtwQT5zQ?e=alrvF1)
