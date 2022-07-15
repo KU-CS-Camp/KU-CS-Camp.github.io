@@ -11,14 +11,12 @@ source 2022summercamp/bin/activate
 
 If you run programs in a terminal without running this command first, there is a chance your program will fail due to import errors.
 
-</br></br>
 
 ### Friday Session
 
 #### Outline
 - Create Presentation
 - Presentation Runthrough
-</br>
 
 What to include in your presentation slide(s):
 - Describe the task
@@ -29,7 +27,6 @@ What to include in your presentation slide(s):
     - Include pictures of graphs and/or terminal output
     - Metrics calculated
 
-</br>
 
 Each table will present as a group.
 Here are the group numbers:
@@ -67,7 +64,6 @@ Cooper: [Gridworld](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_hom
 
 Mad Libs, Wordle, Pong, Number Guessing: [Python Side Projects](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EfhST2jDHOdNlKVEUBcjqdoBbipXlbHEqZFJW95ioHXR1Q?e=0R43Yo)
 
-</br></br></br>
 
 
 ### Thursday Session 2
