@@ -62,7 +62,7 @@ Group 8: [Box Office Predictor](https://kansas-my.sharepoint.com/:p:/g/personal/
 
 Cooper: [Gridworld](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EXdVGJr4UdFIoSlIB1yPazkB9V2yMN-QfdARCqC6Bdq6ew?e=Z00aMt)
 
-Mad Libs, Wordle, Pong, Number Guessing: [Python Side Projects](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EfhST2jDHOdNlKVEUBcjqdoBbipXlbHEqZFJW95ioHXR1Q?e=0R43Yo)
+Mad Libs, Wordle, Pong, Number Guessing: [Python Side Projects](https://kansas-my.sharepoint.com/:f:/g/personal/a035d579_home_ku_edu/EjOPUJYbBkpJlGeRpk2UJToBEe8UAdzA-PrfjH6Zg2vrhg?e=Nqi8tS)
 
 
 
