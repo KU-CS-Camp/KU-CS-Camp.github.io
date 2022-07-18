@@ -12,7 +12,7 @@ source 2022summercamp/bin/activate
 If you run programs in a terminal without running this command first, there is a chance your program will fail due to import errors.
 
 
-### Friday Session
+<!-- ### Friday Session
 
 #### Outline
 - Create Presentation
@@ -157,6 +157,9 @@ More Difficult Games:
 ### Monday Session 2
 
 #### Outline
+
+- Machine Learning Overview
+- Supervised Machine Learning
 - Evaluation and Metrics
 - Classifiers
     - Naïve Bayesian
@@ -174,7 +177,7 @@ More Difficult Games:
 [Movie Box Office Predictor](/box-office.md)
 
 [Text Sentiment Identifier](/text-sentiment.md)
-
+ -->
 
 ### Monday Session 1
 
@@ -182,12 +185,10 @@ More Difficult Games:
 - Introduction
 - Python Review
 - Python Exercises
-- Machine Learning Overview
-- Supervised Machine Learning
-
+- 
 #### Slides
 
-[Monday Session 1](/slides/CampM1.pptx)
+<!-- [Monday Session 1](/slides/CampM1.pptx) -->
 
 #### Projects
 
