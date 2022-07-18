@@ -153,7 +153,7 @@ More Difficult Games:
 - Emulate Dice Role: follow [this tutorial](https://realpython.com/python-dice-roll/)
 - Battleship game (you will need to look into 2D arrays): create a battleship game against a simple AI, a player will enter a turn through the terminal, the AI will take its turn by randomly selecting a spot, base your implementation on the [actual rules](https://www.hasbro.com/common/instruct/battleship.pdf) of battleship
 
-
+-->
 ### Monday Session 2
 
 #### Outline
@@ -179,7 +179,7 @@ More Difficult Games:
 [Text Sentiment Identifier](/text-sentiment.md)
 
 [Python Exercises 2](/MorePython.md)
- -->
+ 
 
 ### Monday Session 1
 
