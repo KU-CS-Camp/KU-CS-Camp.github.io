@@ -124,6 +124,8 @@ Try to Create these Games:
 - Mad Libs (Think of sentences like 'I can't start my day without my blank!' and ask the user for a noun/adjective/etc to fill in the blank, then display the completed sentence or story)
 - Rock, Paper, Scissors (get terminal input and play against AI choosing a random action)
 - Hangman
+- Tic Tac Toe
+- Battleship game (you will need to look into 2D arrays): create a battleship game against a simple AI, a player will enter a turn through the terminal, the AI will take its turn by randomly selecting a spot, base your implementation on the [actual rules](https://www.hasbro.com/common/instruct/battleship.pdf) of battleship
 
 More Difficult Games:
 - Tic Tac Toe
@@ -149,9 +151,10 @@ More Difficult Games:
 
 #### Python Challenges
 
-- Guess the number game: generate a random integer from a range of 1-100, ask players to guess a number, have them keep guessing until they are correct
+- Mad Libs (Think of sentences like 'I can't start my day without my blank!' and ask the user for a noun/adjective/etc to fill in the blank, then display the completed sentence or story)
+- Rock, Paper, Scissors (get terminal input and play against AI choosing a random action)
+- Hangman
 - Emulate Dice Role: follow [this tutorial](https://realpython.com/python-dice-roll/)
-- Battleship game (you will need to look into 2D arrays): create a battleship game against a simple AI, a player will enter a turn through the terminal, the AI will take its turn by randomly selecting a spot, base your implementation on the [actual rules](https://www.hasbro.com/common/instruct/battleship.pdf) of battleship
 
 
 ### Monday Session 2
