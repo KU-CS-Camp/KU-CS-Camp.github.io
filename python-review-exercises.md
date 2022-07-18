@@ -36,7 +36,7 @@ print('Hello, World!')
 Pretend that we have a list of grades from a hypothetical CS course. We can use this list of grades to explore lists, if statements, and for loops.
 
 1. Create a new file named ‘grades.py’
-2. Generate an array of ~10 fake grades (your choice)
+2. Create a variable equal to an array of ~10 fake grades (integer numbers). For example, 66,89, 99, 70
 3. Create a function for checking grades
 4. Loop through the grades and print out ‘You passed!’ when the grade is above a 70 otherwise print ‘Sorry, you did not pass’
 5. Call the function at the bottom of the file
@@ -53,8 +53,8 @@ import numpy as np
 ```
 Using ‘as np’ means that when you reference the library you can just use np rather than type numpy every time. For example, call np.function(array)
 
-3. Create an array of random integers
-4. Print out the results of using NumPy to find the following (For syntax: [NumPy Reference](https://www.w3schools.com/python/numpy/numpy_intro.asp)):
+3. Create a variable equal to an array of random integers. For example, 77, 23, 1, 34
+4. Print out the results of using NumPy to find the following (For syntax: [NumPy Reference]([https://www.w3schools.com/python/numpy/numpy_intro.asp](https://numpy.org/doc/stable/reference/routines.math.html))):
     - Size
     - Minimum and maximum (amax, amin)
     - Mean
