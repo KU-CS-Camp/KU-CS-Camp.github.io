@@ -12,6 +12,13 @@ Download the dataset [here](datasets/iris.csv) (right click and save it)
 
 For most of this project, you will need to change the parameters passed to functions. For example, func('filename.csv') should be changed to the actual file name of the dataset on your computer.
 
+### Create File and Prepare Terminal
+Create a new file with the ending .py , move your downloaded data file into the same folder as the new Python file, run the command below in terminal, and then use cd to change into the folder with your new file and data file.
+
+```
+source 2022summercamp/bin/activate
+```
+
 ### Initial Steps
 First, we need to load all of the libraries that will be needed. You can run the script to ensure all libraries are installed correctly (ideally the nothing will happen, and the program will finish).
 
@@ -42,23 +49,15 @@ Now, we need to load the iris data, and the pandas library can help. Pandas is a
 We have already imported the read_csv() function from pandas at the top of our file. We need to pass the location of the data file (should just be the name of the file if it's in the same directory as your Python file) and the column names associated with the csv file using the following syntax:
 
 ```
-dataset = read_csv('filename.csv', names=[‘col1’, col2', ‘col3'])
+dataset = read_csv('filename.csv')
 ```
-
-In this case, the column names will be the iris characteristics in this order: 
-
-- sepal-length
-- sepal-width
-- petal-length
-- petal-width
-- class
 
 <details markdown="1">
 
 <summary>Check Your Code</summary>
 
 ```
-dataset = read_csv('iris.csv', names=['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class'])
+dataset = read_csv('iris.csv')
 ```
 
 </details>
@@ -68,7 +67,7 @@ dataset = read_csv('iris.csv', names=['sepal-length', 'sepal-width', 'petal-leng
 
 Let’s take a look at the data using some useful commands that could also be helpful in future projects.
 
-Print out the results of each of the following commands:
+Use the print() function to print out the results of each of the following commands:
 - Dimensions of the dataset - This will give us an idea of how many instances (rows) and attributes (columns) the data contains
      ```dataset.shape```
 - Peek at data - This allows us to actually view the data
@@ -90,14 +89,14 @@ Now, we can visualize our data for an even further understanding with matplotlib
 We can look at the distribution of the input variables using box and whisker plots (no need to change any code)
 ```
 dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
-pyplot.show()
+pyplot.savefig('databoxplot.png')
 ```
 
 Another way to view distribution by creating histograms
 
 ```
 dataset.hist()
-pyplot.show()
+pyplot.savefig('datahist.png')
 ```
 
 Do you notice any familiar distributions? [hint](https://www.mathsisfun.com/data/standard-normal-distribution.html)
@@ -151,15 +150,9 @@ We need to find an algorithm that works best on this data, so we will test the f
     - Gaussian Naive Bayes (NB)
     - Support Vector Machines (SVM)
 
-Copy this code exactly into your file:
+We will store the 6 models we want to test in an array. Copy this code exactly into your file:
 ```
-models = []
-models.append(('LR', LogisticRegression(solver='liblinear', multi_class='ovr')))
-models.append(('LDA', LinearDiscriminantAnalysis()))
-models.append(('KNN', KNeighborsClassifier()))
-models.append(('CART', DecisionTreeClassifier()))
-models.append(('NB', GaussianNB()))
-models.append(('SVM', SVC(gamma='auto')))
+models = [LogisticRegression(solver='liblinear', multi_class='ovr'),  LinearDiscriminantAnalysis(),  KNeighborsClassifier(), DecisionTreeClassifier(), GaussianNB(), SVC(gamma='auto')]
 ```
 
 ***
@@ -175,18 +168,18 @@ The process:
 - Create a loop that goes through every (name, model) pair we just created
 - Inside the loop
     - Create a k-fold instance with 10 parts, 1 as the random state seed, and shuffle set to True
-    - Calculate the cross-validation score by passing in the model, arrays, kfold type, and accuracy scoring
-    - Add the result and name of the model to an array that will hold all of the model results
+    - Calculate the cross-validation score by passing in the model, x and y arrays, cv=kfold, and scoring='accuracy'
     - Print out the accuracy and time of each model
 
 ```
 results = []
 names = []
-for name, model in models:
-	kfold = # Call StratifiedKFold() with 10 splits, random state as 1, and shuffle as true
-	cv_results = # Use cross_val_score() to generate results. Pass it the model, x and y training sets, kfold as cv, and 'accuracy' for scoring
-	# Add the cv_results to the results array as well as the name to the names array
-	print('%s: %f (%f)' % (name, cv_results.mean(), cv_results.std()))
+for model in models:
+	kfold = 
+	cv_results = 
+	results.append(cv_results)
+	names.append(str(model))
+	print('%s: %f (%f)' % (str(model), cv_results.mean(), cv_results.std()))
 ```
 
 <details markdown="1">
@@ -200,8 +193,8 @@ for name, model in models:
 	kfold = StratifiedKFold(n_splits=10, random_state=1, shuffle=True)
 	cv_results = cross_val_score(model, X_train, Y_train, cv=kfold, scoring='accuracy')
 	results.append(cv_results)
-	names.append(name)
-	print('%s: %f (%f)' % (name, cv_results.mean(), cv_results.std()))
+	names.append(str(model))
+	print('%s: %f (%f)' % (str(model), cv_results.mean(), cv_results.std()))
 ```
 
 </details>
@@ -229,15 +222,15 @@ Now, we want to check the accuracy of our model on the validation set we created
 First, we will fit our model on our training arrays, and then we can made predictions on the input validation array.
 
 To do this:
-- Create an instance of the most accurate algorithm
+- Initiate the most accurate algorithm (check the model array from earlier for syntax)
 - Call model.fit() and pass in the X and Y training arrays
 - Store the results of calling model.predict() with the X validation array
 
 ```
 # Make predictions on the validation dataset
-model = # Create an instance of the model that performed the best
+model = 
 # Fit the model on x and y training sets
-predictions = # Use the model to predict the x validation set
+predictions = 
 ```
 
 <details markdown="1">
