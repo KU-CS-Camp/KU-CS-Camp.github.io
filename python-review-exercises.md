@@ -54,7 +54,7 @@ import numpy as np
 Using ‘as np’ means that when you reference the library you can just use np rather than type numpy every time. For example, call np.function(array)
 
 3. Create a variable equal to an array of random integers. For example, 77, 23, 1, 34
-4. Print out the results of using NumPy to find the following (For syntax: [NumPy Reference]([https://www.w3schools.com/python/numpy/numpy_intro.asp](https://numpy.org/doc/stable/reference/routines.math.html))):
+4. Print out the results of using NumPy to find the following (For syntax: [NumPy Reference](https://numpy.org/doc/stable/reference/routines.math.html):
     - Size
     - Minimum and maximum (amax, amin)
     - Mean
