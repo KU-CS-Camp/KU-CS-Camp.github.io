@@ -28,4 +28,16 @@ After they win...
 
 ***
 ### Wordle
-Create a replica Wordle game.
+Create a game similar to Wordle.
+
+- Create an array that stores a bunch of words that will be used as the secret word. You can use only 5 letter words (or make different levels that use 6 or 7 letters).
+- Prompt the user to enter a word
+    - If they enter a word that is too long, tell them
+    - If they enter a word that is too short, tell them
+    - If their word is the correct length:
+        - User guesses incorrectly:
+            - Tell them how many letters they have correct but in the wrong place
+            - Tell them how many letters they have correct and in the correct place
+            - Prompt them for another word and repeat this process
+        - User guesses correctly:
+            - Congratulate them and prompt them to either play again or exit 
