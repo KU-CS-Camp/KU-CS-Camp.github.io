@@ -190,7 +190,7 @@ More Difficult Games:
 
 #### Slides
 
-<!-- [Monday Session 1](/slides/CampM1.pptx) -->
+[Monday Session 1](/slides/CampM1.pptx)
 
 #### Projects
 
