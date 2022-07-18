@@ -15,6 +15,7 @@ First, load all of the imports necessary for the project.
 
 ```
 import pandas
+from pandas import read_csv
 from pandas import DataFrame
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
@@ -24,15 +25,20 @@ import numpy as np
 ***
 ### Load Data
 
-Load the data using the pandas function read_csv('file.csv') then use variable.describe() to see information about the dataset.
+Now, we need to load the movie data, and the pandas library can help. Pandas is a data analysis library that we will use throughout this camp.
+
+We have already imported the read_csv() function from pandas at the top of our file. We need to pass the location of the data file (should just be the name of the file if it's in the same directory as your Python file) and the column names associated with the csv file using the following syntax:
+
+```
+dataset = read_csv('filename.csv')
+```
 
 <details markdown="1">
 
 <summary>Check Your Code</summary>
 
 ```
-data = pandas.read_csv('movie_cost_revenue.csv')
-data.describe()
+dataset = read_csv('movie_cost_revenue.csv')
 ```
 
 </details>
@@ -42,7 +48,8 @@ data.describe()
 Create x and y datasets by using DataFrame from pandas. You can use the following syntax:
 
 ```
-DataFrame(data, columns=['column_name'])
+X = DataFrame(data, columns=['column_name'])
+y = DataFrame(data, columns=['column_name'])
 ```
 
 The feature (x) array will contain the production budget column, and the label (y) array will hold the gross revenue column.
@@ -74,7 +81,7 @@ plt.clf()
 ***
 ### Build and Train the Model
 
-Create an instance of the Linear Regression model then fit it with the x and y arrays. Check out the coefficient and intercept of the model after training by printing out model.coef_ and model.intercept_ .
+Create an instance of the Linear Regression model by calling its class constructor. Then, fit the model with the x and y arrays using model.fit() . 
 
 <details markdown="1">
 
@@ -83,7 +90,18 @@ Create an instance of the Linear Regression model then fit it with the x and y a
 ```
 model = LinearRegression()
 model.fit(X, y)
+```
 
+</details>
+
+
+Check out the coefficient and intercept of the model after training by printing out model.coef_ and model.intercept_ .
+
+<details markdown="1">
+
+<summary>Check Your Code</summary>
+
+```
 print(model.coef_)
 print(model.intercept_)
 ```
@@ -93,7 +111,7 @@ print(model.intercept_)
 ***
 ### Predict and Plot
 
-Now, it is time to predict with the model over the same x dataset. 
+Now, it is time to predict with the model over the same x dataset. Call model.predict and pass in the X array as testing values. Store these results in a variable.
 
 <details markdown="1">
 
@@ -105,7 +123,7 @@ predict_list = model.predict(X)
 
 </details>
 
-We can then plot the predictions to get an idea of how well the model performs.
+We can then plot the predictions to get an idea of how well the model performs (copy this code).
 
 ```
 plt.figure(figsize=(10,6))
@@ -119,7 +137,7 @@ plt.savefig('fig2.png')
 
 ***
 ### Evaluation
-Finally, we can call score() on the model and pass in the x and y arrays to view the accuracy of the model.
+Finally, we can call model.score() and pass in the x and y arrays to view the accuracy of the model.
 
 <details markdown="1">
 
