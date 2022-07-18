@@ -172,9 +172,9 @@ More Difficult Games:
 [Monday Session 2](/slides/CampM2.pptx)
 
 #### Projects
-[Iris Model Comparison](/iris.md)
-
 [Movie Box Office Predictor](/box-office.md)
+
+[Iris Model Comparison](/iris.md)
 
 [Text Sentiment Identifier](/text-sentiment.md)
  -->
