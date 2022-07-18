@@ -177,6 +177,8 @@ More Difficult Games:
 [Iris Model Comparison](/iris.md)
 
 [Text Sentiment Identifier](/text-sentiment.md)
+
+[Python Exercises 2](/MorePython.md)
  -->
 
 ### Monday Session 1
@@ -185,7 +187,7 @@ More Difficult Games:
 - Introduction
 - Python Review
 - Python Exercises
-- 
+
 #### Slides
 
 <!-- [Monday Session 1](/slides/CampM1.pptx) -->
