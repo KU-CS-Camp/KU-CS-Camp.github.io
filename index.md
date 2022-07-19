@@ -128,6 +128,7 @@ Try to Create these Games:
 - Battleship game (you will need to look into 2D arrays): create a battleship game against a simple AI, a player will enter a turn through the terminal, the AI will take its turn by randomly selecting a spot, base your implementation on the [actual rules](https://www.hasbro.com/common/instruct/battleship.pdf) of battleship
 - Snake
 - Pong
+- Password Generator
 
 ### Tuesday Session 1
 
