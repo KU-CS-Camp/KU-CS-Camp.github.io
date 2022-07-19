@@ -129,6 +129,7 @@ Try to Create these Games:
 - Snake
 - Pong
 - Password Generator
+- Speed Typing Test
 
 ### Tuesday Session 1
 
