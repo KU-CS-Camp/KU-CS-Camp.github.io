@@ -102,9 +102,9 @@ Once done, work on project from yesterday if you were making tic tac toe, pong, 
 
 [Customer Analysis](/customer-analysis.md)
 
-[Word Game](/wordgame.md)
+[Wordle Game](/wordgame.md)
 
-Once done, work on project from yesterday if you were making tic tac toe, pong, battleship, etc.
+Once done, work on project from Tuesday if you were making tic tac toe, pong, battleship, etc.
 
 
 ### Tuesday Session 2
