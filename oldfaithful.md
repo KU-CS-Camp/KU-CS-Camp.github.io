@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 ```
 
 ### Load Data
-Load the data as normal with read_csv()
+Load the data into a variable as normal with read_csv()
 
 <details markdown="1">
 
@@ -49,10 +49,10 @@ plt.savefig('initialfig.png')
 ```
 
 ### Choose K
-One technique for choosing the value of k is by simply looking at a plot of the data. Look at the saved plot you just created and determine what you think the k value (number of clusters) should be for this data.
+One technique for choosing the value of k, or the number of clusters, is by simply looking at a plot of the data. Look at the saved plot you just created and determine what you think the k value (number of clusters) should be for this data.
 
 ### Create and Train Model
-Now, create a KMeans model with the number of clusters (n_clusters) you determined in the previous step.  Train/fit the model on the dataset (no need to split into different arrays this time).
+Now, create a KMeans model with a parameter of the number of clusters (n_clusters) you determined in the previous step.  Train/fit the model on the whole dataset (no need to split into different arrays this time since we do not have labels for a y array).
 
 <details markdown="1">
 
