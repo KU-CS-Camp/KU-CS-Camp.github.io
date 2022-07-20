@@ -82,9 +82,6 @@ Mad Libs, Wordle, Pong, Number Guessing: [Python Side Projects](https://kansas-m
 
 [Gridworld](/gridworld.md)
 
-[Word Game](/wordgame.md)
-
-Once done, work on project from yesterday if you were making tic tac toe, pong, battleship, etc.
 -->
 ### Thursday Session 1
 
