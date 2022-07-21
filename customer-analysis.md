@@ -15,6 +15,7 @@ First, load all of the imports necessary for the project.
 
 ```
 import pandas as pd
+from pandas import read_csv
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import make_blobs
