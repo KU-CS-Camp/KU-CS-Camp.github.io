@@ -82,6 +82,8 @@ Mad Libs, Wordle, Pong, Number Guessing: [Python Side Projects](https://kansas-m
 
 [Gridworld](/gridworld.md)
 
+[Self-Driving Cab Online Tutorial](https://www.learndatasci.com/tutorials/reinforcement-q-learning-scratch-python-openai-gym/)
+
 
 ### Thursday Session 1
 
