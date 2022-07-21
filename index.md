@@ -37,32 +37,31 @@ Here are the group numbers:
 |                                |
 |    (1)            (2|3)        |
 |                                |
-|    (4|5)            (6)        |
+|    ( 4 )            (6)        |
+|      5                         |
 |                                |
 |    (7|8)            (9)        |
 |                                |
 |--door--------------------------|
 ```
 
-Group 1: [Customer Analysis](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EdIEtR3Nr6tOr487x-cQYykBj-9Ij7SVSTfOtToXFQ9kng?e=qHY2MK)
+Group 1: [Digit Identifier](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EUVihvRysVhMpT_mORBtARUBSTe2cVLAo7RaNeJuu98GCg?e=2ueM9X)
 
-Group 2: [Iris Model Comparison](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EaGKlAv16QtJhbKaC_6n52gBBYth5NQk3EwwdXDtwQT5zQ?e=alrvF1)
+Group 2: [Gridworld](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/Edp1iJd3QfxIi8AOEYfEPoIBST_wHypnUrCXrwnQkulyvQ?e=Kblaca)
 
-Group 3: [Stock Predictor](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/Ecl4KiK-QT1GvwHgmNZB0sABB4AP6ZfJdxQIirc-QHh1aw?e=IqzFCM)
+Group 3: [Tic Tac Toe](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EY0IpynC_RFMqPi-x-PhZsYBYE85hX2iSUUOcJ6KXKD3iQ?e=A7MSZp)
 
-Group 4: [Digit Identifier](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EZZYtaIRSWFLtrupOHlgUygBJQZ-pGpXxzKcagRThOd22Q?e=bZ29UG)
+Group 4: [Car Sales Predictor](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/ESMMPOeowGtFjQn7q3y1kW4B8h-82Gz_PoKzM9OJ4BbpPA?e=kFpePZ)
 
-Group 5: [Old Faithful](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EZZ_pefRu9ZGjetEpELBVHoBbwILvt198kThsU_Cqo2GMQ?e=1dkLL5)
+Group 5: [Old Faithful](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/ET1bGfQnHJBChlQF6ooRC2EBN6w75fsuBiVhCBCwzXzqBw?e=wyYRZp)
 
-Group 6: [Car Sales Predictor](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EVEvM7ptvYZKr0N8gCPesqYB_-qvbm_1v1SCOwCRdiYczQ?e=NQ3Vom)
+Group 6: [Customer Analysis](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EedT8C7FNdtMnQ39phHP-_EBQFEaqJ8Rv7cibyDBrPgjaA?e=neFjtd)
 
-Group 7: [Tic Tac Toe](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/ER_EJcpsEEpPrKyHjLeW0OIBB1GDF104U8Si4MrlBZiQWA?e=ykr2FX)
+Group 7: [Stock Predictor](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EePaz0LoI-lEgt8h_pw5_R4BeHAv9lzM38i3wd40yUsh4w?e=8QHgey)
 
-Group 8: [Box Office Predictor](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/Ef-XugFzUr1PkXh9t-r_nBsBWk5VIBinfhE9rG0IfOEcAg?e=nFJzEF)
+Group 8: [Iris Model Comparison](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EfBvEL7_VfVOgi6al5ilhmYBZ4zS1hhrZa1U7zzJhUvY3Q?e=qXbT77)
 
-Cooper: [Gridworld](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_home_ku_edu/EXdVGJr4UdFIoSlIB1yPazkB9V2yMN-QfdARCqC6Bdq6ew?e=Z00aMt)
-
-Mad Libs, Wordle, Pong, Number Guessing: [Python Side Projects](https://kansas-my.sharepoint.com/:f:/g/personal/a035d579_home_ku_edu/EjOPUJYbBkpJlGeRpk2UJToBEe8UAdzA-PrfjH6Zg2vrhg?e=Nqi8tS)
+Rock Paper Scissors, Black Jack, Fruit Guesser, Tic Tac Toe: [Python Side Projects](https://kansas-my.sharepoint.com/:f:/g/personal/a035d579_home_ku_edu/EjnGhKHti3JDvz8w2AJBFJwBhW4WZQjwuAkpWgOOCSR5lw?e=wZrUzj)
 
 -->
 
