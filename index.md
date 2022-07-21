@@ -64,7 +64,7 @@ Cooper: [Gridworld](https://kansas-my.sharepoint.com/:p:/g/personal/a035d579_hom
 
 Mad Libs, Wordle, Pong, Number Guessing: [Python Side Projects](https://kansas-my.sharepoint.com/:f:/g/personal/a035d579_home_ku_edu/EjOPUJYbBkpJlGeRpk2UJToBEe8UAdzA-PrfjH6Zg2vrhg?e=Nqi8tS)
 
-
+-->
 
 ### Thursday Session 2
 
@@ -82,7 +82,7 @@ Mad Libs, Wordle, Pong, Number Guessing: [Python Side Projects](https://kansas-m
 
 [Gridworld](/gridworld.md)
 
--->
+
 ### Thursday Session 1
 
 #### Outline
