@@ -11,8 +11,7 @@ source 2022summercamp/bin/activate
 
 If you run programs in a terminal without running this command first, there is a chance your program will fail due to import errors.
 
-
-<!-- ### Friday Session
+### Friday Session
 
 #### Outline
 - Create Presentation
@@ -63,7 +62,6 @@ Group 8: [Iris Model Comparison](https://kansas-my.sharepoint.com/:p:/g/personal
 
 Rock Paper Scissors, Black Jack, Fruit Guesser, Tic Tac Toe: [Python Side Projects](https://kansas-my.sharepoint.com/:f:/g/personal/a035d579_home_ku_edu/EjnGhKHti3JDvz8w2AJBFJwBhW4WZQjwuAkpWgOOCSR5lw?e=wZrUzj)
 
--->
 
 ### Thursday Session 2
 
