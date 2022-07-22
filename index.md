@@ -1,4 +1,4 @@
-## Welcome to Summer Camp!
+<!-- ## Welcome to Summer Camp!
 
 This website will be used for distributing our projects. I will also attach the slides we go over that can be used as reference while you work on projects.
 
@@ -211,3 +211,4 @@ Here are some websites with ideas for other machine learning projects:
 [machine-learning-project-ideas](https://data-flair.training/blogs/machine-learning-project-ideas/)
 
 [machine-learning-projects-for-beginners-and-professionals](https://www.dunebook.com/machine-learning-projects-for-beginners-and-professionals/)
+ -->
